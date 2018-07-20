@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    @IBOutlet weak var errorcode: UILabel!
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var password: UITextField!
@@ -27,10 +28,12 @@ class ViewController: UIViewController {
         if benutzername == db_benutzername && passwort == db_passwort
         {
           
-            print("Test")
+            print("Erfolgreich")
+            self.errorcode.text = ""
         }
         else  {
             print ("Fehlgeschlagen")
+            self.errorcode.text = "Authentifizierung fehlgeschlagen"
         }
         //Methode für das Überprüfen vom Passwort und dem Benutzernamen und Action Button für das Login
         
