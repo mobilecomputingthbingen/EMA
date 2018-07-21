@@ -23,14 +23,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    
     private func setupView() {
         
         //MapView
         self.mapView.delegate = self
         self.mapView.showsUserLocation = true
-
-        
         
         self.navigationController?.navigationBar.topItem?.title = "Karte"
         
