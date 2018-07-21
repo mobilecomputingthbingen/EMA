@@ -1,0 +1,6 @@
+framework module Pods_EMAUITests {
+  umbrella header "Pods-EMAUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
