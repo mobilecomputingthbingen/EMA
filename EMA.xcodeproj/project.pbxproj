@@ -101,6 +101,7 @@
 		33FDF5882101EC5E002A475E /* EMA */ = {
 			isa = PBXGroup;
 			children = (
+				BD09F42A2104D88D00BDA189 /* Fields */,
 				33FDF5892101EC5E002A475E /* AppDelegate.swift */,
 				33FDF58B2101EC5E002A475E /* ViewController.swift */,
 				33FDF58D2101EC5E002A475E /* Main.storyboard */,
@@ -129,6 +130,13 @@
 				33FDF5AB2101EC5F002A475E /* Info.plist */,
 			);
 			path = EMAUITests;
+			sourceTree = "<group>";
+		};
+		BD09F42A2104D88D00BDA189 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MKL6P6GZ8;
 				INFOPLIST_FILE = EMA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8MKL6P6GZ8;
 				INFOPLIST_FILE = EMA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
