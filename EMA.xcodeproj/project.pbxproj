@@ -16,6 +16,8 @@
 		33FDF5AA2101EC5F002A475E /* EMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5A92101EC5F002A475E /* EMAUITests.swift */; };
 		7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */; };
 		7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */; };
+		BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42B2104DA1300BDA189 /* MapViewController.swift */; };
+		BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42D2104DA1E00BDA189 /* FieldsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		33FDF5AB2101EC5F002A475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		BD09F42B2104DA1300BDA189 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BD09F42D2104DA1E00BDA189 /* FieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 		BD09F42A2104D88D00BDA189 /* Fields */ = {
 			isa = PBXGroup;
 			children = (
+				BD09F42B2104DA1300BDA189 /* MapViewController.swift */,
+				BD09F42D2104DA1E00BDA189 /* FieldsViewController.swift */,
 			);
 			path = Fields;
 			sourceTree = "<group>";
@@ -289,7 +295,9 @@
 			files = (
 				33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */,
 				33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */,
+				BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */,
 				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
+				BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
