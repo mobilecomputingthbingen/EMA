@@ -17,11 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBAction func login(_ sender: Any) {
-        let loginUsername = self.username.text
-        let loginPassword = self.password.text
-        let databaseUsername = "benutzername"
-        let databasePassword = "passwort"
-        if loginUsername == databaseUsername && loginPassword == databasePassword {
+
+        let loginManager = LoginManager()
+
+        let isLoginSuccessful = loginManager.tryLogin(username: self.username.text!, password: self.password.text!)
+
+        if isLoginSuccessful {
             print("Erfolgreich")
             self.errorcode.text = ""
         } else {

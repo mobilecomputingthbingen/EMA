@@ -14,6 +14,8 @@
 		33FDF5942101EC5F002A475E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDF5922101EC5F002A475E /* LaunchScreen.storyboard */; };
 		33FDF59F2101EC5F002A475E /* EMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF59E2101EC5F002A475E /* EMATests.swift */; };
 		33FDF5AA2101EC5F002A475E /* EMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5A92101EC5F002A475E /* EMAUITests.swift */; };
+		7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */; };
+		7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		33FDF5A52101EC5F002A475E /* EMAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FDF5A92101EC5F002A475E /* EMAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMAUITests.swift; sourceTree = "<group>"; };
 		33FDF5AB2101EC5F002A475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				33FDF5902101EC5F002A475E /* Assets.xcassets */,
 				33FDF5922101EC5F002A475E /* LaunchScreen.storyboard */,
 				33FDF5952101EC5F002A475E /* Info.plist */,
+				7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */,
 			);
 			path = EMA;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			children = (
 				33FDF59E2101EC5F002A475E /* EMATests.swift */,
 				33FDF5A02101EC5F002A475E /* Info.plist */,
+				7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */,
 			);
 			path = EMATests;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 			files = (
 				33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */,
 				33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */,
+				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33FDF59F2101EC5F002A475E /* EMATests.swift in Sources */,
+				7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
