@@ -29,6 +29,7 @@ class ViewController: UIViewController {
 
         if isLoginSuccessful {
             self.errorcode.text = ""
+            changeViewToMenu()
         } else {
             fadeViewIn(view: errorcode)
             self.errorcode.text = "Authentifizierung fehlgeschlagen"
@@ -45,6 +46,11 @@ class ViewController: UIViewController {
             view.alpha = 1
         })
     }
+
+    func changeViewToMenu() {
+        performSegue(withIdentifier: "segueFromLoginToMenu", sender: self)
+    }
+
     @IBAction func showHideButtonTouchUpInsideHandler(_ sender: Any) {
         isPasswordVisible = !isPasswordVisible
         if isPasswordVisible {

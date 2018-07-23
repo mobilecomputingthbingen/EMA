@@ -14,6 +14,7 @@
 		33FDF5942101EC5F002A475E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDF5922101EC5F002A475E /* LaunchScreen.storyboard */; };
 		33FDF59F2101EC5F002A475E /* EMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF59E2101EC5F002A475E /* EMATests.swift */; };
 		33FDF5AA2101EC5F002A475E /* EMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5A92101EC5F002A475E /* EMAUITests.swift */; };
+		7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67090C2105F94600072FE9 /* MenuViewController.swift */; };
 		7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */; };
 		7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */; };
 		BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42B2104DA1300BDA189 /* MapViewController.swift */; };
@@ -51,6 +52,7 @@
 		33FDF5A52101EC5F002A475E /* EMAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FDF5A92101EC5F002A475E /* EMAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMAUITests.swift; sourceTree = "<group>"; };
 		33FDF5AB2101EC5F002A475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E67090C2105F94600072FE9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		BD09F42B2104DA1300BDA189 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				33FDF5922101EC5F002A475E /* LaunchScreen.storyboard */,
 				33FDF5952101EC5F002A475E /* Info.plist */,
 				7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */,
+				7E67090C2105F94600072FE9 /* MenuViewController.swift */,
 			);
 			path = EMA;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */,
+				7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */,
 				33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */,
 				BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */,
 				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
