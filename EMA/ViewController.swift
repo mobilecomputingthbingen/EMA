@@ -28,7 +28,8 @@ class ViewController: UIViewController {
         let isLoginSuccessful = loginManager.tryLogin(username: self.username.text!, password: self.password.text!)
 
         if isLoginSuccessful {
-            self.errorcode.text = ""
+            self.errorcode.text = "Authentifizierung erfolgreich"
+            sleep(1)
             changeViewToMenu()
         } else {
             fadeViewIn(view: errorcode)

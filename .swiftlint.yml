@@ -1,3 +1,4 @@
 excluded:
   - Carthage
   - Pods
+  - EMA/DatabaseManager.swift
