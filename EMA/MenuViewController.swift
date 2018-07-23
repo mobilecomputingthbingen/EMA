@@ -8,24 +8,59 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: UICollectionViewController {
+    let items = ["Normal", "Traubenlese", "Düngung", "Pflanzenschutz"]
+    let itemBackgroundColor = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green]
+
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)
+        -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+                as! MenuCollectionViewCell // swiftlint:disable:this force_cast
+            cell.label.text = items[indexPath.item]
+            cell.backgroundColor = itemBackgroundColor[indexPath.item]
+            return cell
+    }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.item)
+    }
+
+    override func collectionView(_ collectionView: UICollectionView,
+                                 viewForSupplementaryElementOfKind kind: String,
+                                 at indexPath: IndexPath) -> UICollectionReusableView {
+        let sectionHeaderView = collectionView.dequeueReusableSupplementaryView(
+            ofKind: UICollectionElementKindSectionHeader,
+            withReuseIdentifier: "SectionHeaderView", for: indexPath)
+            as! SectionHeaderView // swiftlint:disable:this force_cast
+        sectionHeaderView.label.text = "Wählen Sie einen Vorgang aus"
+        return sectionHeaderView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        var screenSize: CGRect!
+        var screenWidth: CGFloat!
+        var itemsSize: CGFloat!
+
+        screenSize = UIScreen.main.bounds
+        screenWidth = screenSize.width
+        itemsSize = (screenWidth - 3 * 16) / 2
+
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        layout.itemSize = CGSize(width: itemsSize, height: itemsSize)
+        layout.minimumInteritemSpacing = 16
+        layout.minimumLineSpacing = 16
+        collectionView!.collectionViewLayout = layout
+        layout.headerReferenceSize = CGSize(width: 50, height: 50)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

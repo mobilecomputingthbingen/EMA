@@ -28,23 +28,28 @@ class ViewController: UIViewController {
         let isLoginSuccessful = loginManager.tryLogin(username: self.username.text!, password: self.password.text!)
 
         if isLoginSuccessful {
+            self.errorcode.textColor = UIColor.green
             self.errorcode.text = "Authentifizierung erfolgreich"
-            sleep(1)
-            changeViewToMenu()
+            fadeViewIn(view: errorcode, isLoginSuccessful: true)
         } else {
-            fadeViewIn(view: errorcode)
+            self.errorcode.textColor = UIColor.red
             self.errorcode.text = "Authentifizierung fehlgeschlagen"
+            fadeViewIn(view: errorcode, isLoginSuccessful: false)
         }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    func fadeViewIn(view: UIView) {
-        let animationDuration = 0.75
+    func fadeViewIn(view: UIView, isLoginSuccessful: Bool) {
+        let animationDuration = 1.0
         view.alpha = 0
-        UIView.animate(withDuration: animationDuration, animations: { () -> Void in
+        UIView.animate(withDuration: animationDuration, animations: {
             view.alpha = 1
+        }, completion: { (finished: Bool) in
+            if finished && isLoginSuccessful {
+                self.changeViewToMenu()
+            }
         })
     }
 

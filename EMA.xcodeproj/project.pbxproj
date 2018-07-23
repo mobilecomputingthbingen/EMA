@@ -19,6 +19,8 @@
 		7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F898B210619C600BA2FEE /* DatabaseManager.swift */; };
 		7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */; };
 		7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */; };
+		7E9D32C721064384001A49F1 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9D32C621064384001A49F1 /* MenuCollectionViewCell.swift */; };
+		7E9D32C921065B78001A49F1 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9D32C821065B78001A49F1 /* SectionHeaderView.swift */; };
 		9756EB7FB181064EA843EDD8 /* Pods_EMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9808B1E81DBB477392B081 /* Pods_EMA.framework */; };
 		A807A61BC9E0C242A988F6DF /* Pods_EMAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F6A68807E800EAC18FD68 /* Pods_EMAUITests.framework */; };
 		BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42B2104DA1300BDA189 /* MapViewController.swift */; };
@@ -65,6 +67,8 @@
 		7E8F898B210619C600BA2FEE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		7E9D32C621064384001A49F1 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		7E9D32C821065B78001A49F1 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		8B4B1147F753B6BA00146112 /* Pods-EMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMA.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMA/Pods-EMA.release.xcconfig"; sourceTree = "<group>"; };
 		BD09F42B2104DA1300BDA189 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BD09F42D2104DA1E00BDA189 /* FieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */,
 				7E67090C2105F94600072FE9 /* MenuViewController.swift */,
 				7E8F898B210619C600BA2FEE /* DatabaseManager.swift */,
+				7E9D32C621064384001A49F1 /* MenuCollectionViewCell.swift */,
+				7E9D32C821065B78001A49F1 /* SectionHeaderView.swift */,
 			);
 			path = EMA;
 			sourceTree = "<group>";
@@ -420,6 +426,8 @@
 				33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */,
 				7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */,
 				33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */,
+				7E9D32C721064384001A49F1 /* MenuCollectionViewCell.swift in Sources */,
+				7E9D32C921065B78001A49F1 /* SectionHeaderView.swift in Sources */,
 				BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */,
 				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
 				BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */,
