@@ -15,7 +15,13 @@
 		33FDF59F2101EC5F002A475E /* EMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF59E2101EC5F002A475E /* EMATests.swift */; };
 		33FDF5AA2101EC5F002A475E /* EMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5A92101EC5F002A475E /* EMAUITests.swift */; };
 		69189DED57C1854E9B7DC768 /* Pods_EMATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32D695FDAFE233D628C97CD /* Pods_EMATests.framework */; };
+		7E089834210B5F220085EA50 /* DatabaseModelNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */; };
+		7E089836210B94380085EA50 /* WorkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089835210B94380085EA50 /* WorkState.swift */; };
+		7E089839210BB6860085EA50 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089838210BB6860085EA50 /* Field.swift */; };
 		7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67090C2105F94600072FE9 /* MenuViewController.swift */; };
+		7E8C36A721089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36A621089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift */; };
+		7E8C36A92108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36A82108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift */; };
+		7E8C36AB2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */; };
 		7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F898B210619C600BA2FEE /* DatabaseManager.swift */; };
 		7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */; };
 		7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */; };
@@ -63,7 +69,13 @@
 		5D9808B1E81DBB477392B081 /* Pods_EMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC8F36519DB49EBB89D362E /* Pods-EMATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMATests/Pods-EMATests.release.xcconfig"; sourceTree = "<group>"; };
 		7A92724CA8B3F0C5794D0456 /* Pods-EMAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMAUITests/Pods-EMAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModelNormal.swift; sourceTree = "<group>"; };
+		7E089835210B94380085EA50 /* WorkState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkState.swift; sourceTree = "<group>"; };
+		7E089838210BB6860085EA50 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		7E67090C2105F94600072FE9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7E8C36A621089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRoutineNormalTableViewController.swift; sourceTree = "<group>"; };
+		7E8C36A82108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingRoutineNormalCell.swift; sourceTree = "<group>"; };
+		7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRoutineNormalViewController.swift; sourceTree = "<group>"; };
 		7E8F898B210619C600BA2FEE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
@@ -140,6 +152,8 @@
 		33FDF5882101EC5E002A475E /* EMA */ = {
 			isa = PBXGroup;
 			children = (
+				7E089837210B94960085EA50 /* Enums */,
+				7E089832210B5EDF0085EA50 /* DatabaseModels */,
 				BD09F42A2104D88D00BDA189 /* Fields */,
 				33FDF5892101EC5E002A475E /* AppDelegate.swift */,
 				33FDF58B2101EC5E002A475E /* ViewController.swift */,
@@ -152,6 +166,9 @@
 				7E8F898B210619C600BA2FEE /* DatabaseManager.swift */,
 				7E9D32C621064384001A49F1 /* MenuCollectionViewCell.swift */,
 				7E9D32C821065B78001A49F1 /* SectionHeaderView.swift */,
+				7E8C36A621089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift */,
+				7E8C36A82108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift */,
+				7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */,
 			);
 			path = EMA;
 			sourceTree = "<group>";
@@ -186,6 +203,23 @@
 				52F57BE480750000E0555C0D /* Pods-EMAUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E089832210B5EDF0085EA50 /* DatabaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */,
+				7E089838210BB6860085EA50 /* Field.swift */,
+			);
+			path = DatabaseModels;
+			sourceTree = "<group>";
+		};
+		7E089837210B94960085EA50 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7E089835210B94380085EA50 /* WorkState.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		BD09F42A2104D88D00BDA189 /* Fields */ = {
@@ -372,11 +406,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EMA/Pods-EMA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -423,14 +459,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E089839210BB6860085EA50 /* Field.swift in Sources */,
 				33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */,
 				7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */,
+				7E089836210B94380085EA50 /* WorkState.swift in Sources */,
 				33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */,
 				7E9D32C721064384001A49F1 /* MenuCollectionViewCell.swift in Sources */,
 				7E9D32C921065B78001A49F1 /* SectionHeaderView.swift in Sources */,
+				7E089834210B5F220085EA50 /* DatabaseModelNormal.swift in Sources */,
+				7E8C36A92108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift in Sources */,
 				BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */,
 				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
 				BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */,
+				7E8C36AB2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift in Sources */,
+				7E8C36A721089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift in Sources */,
 				7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

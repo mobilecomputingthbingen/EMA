@@ -5,6 +5,7 @@ target 'EMA' do
 
   # Pods for EMA
   pod 'RealmSwift'
+  pod 'IQKeyboardManagerSwift'
 
   target 'EMATests' do
     inherit! :search_paths

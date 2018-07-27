@@ -9,7 +9,7 @@
 import UIKit
 
 class MenuViewController: UICollectionViewController {
-    let items = ["Normal", "Traubenlese", "Düngung", "Pflanzenschutz"]
+    let items = ["Entlauben", "Traubenlese", "Düngung", "Pflanzenschutz"]
     let itemBackgroundColor = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green]
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -26,7 +26,21 @@ class MenuViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+        switch indexPath.item {
+        case 0  :
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let workRoutineNormalTableViewController = mainStoryboard.instantiateViewController(
+                withIdentifier: "WorkRoutineNormalTable") as? WorkRoutineNormalTableViewController
+            self.navigationController?.pushViewController(workRoutineNormalTableViewController!, animated: true)
+        case 1  :
+            print( "Traubenlese")
+        case 2  :
+            print( "Düngung")
+        case 3  :
+            print( "Pflanzenschutz")
+        default :
+            print( "default")
+        }
     }
 
     override func collectionView(_ collectionView: UICollectionView,
