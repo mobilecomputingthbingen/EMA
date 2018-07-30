@@ -1,26 +1,30 @@
 PODS:
   - IQKeyboardManagerSwift (6.1.1)
-  - Realm (3.7.4):
-    - Realm/Headers (= 3.7.4)
-  - Realm/Headers (3.7.4)
-  - RealmSwift (3.7.4):
-    - Realm (= 3.7.4)
+  - Realm (3.7.5):
+    - Realm/Headers (= 3.7.5)
+  - Realm/Headers (3.7.5)
+  - RealmSwift (3.7.5):
+    - Realm (= 3.7.5)
+  - SwiftLint (0.26.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
   - RealmSwift
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManagerSwift
     - Realm
     - RealmSwift
+    - SwiftLint
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
-  Realm: a469bb59e33f9926102ccaea4349822c53b9117e
-  RealmSwift: a45861b21c180f5cf0f122144b9759fa8dde3e9e
+  Realm: c286caf4dbf346ce24aad49ca76c7ce622d4a082
+  RealmSwift: 2a9281e37d6de55f66f76254d49d28aeb1b729e4
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
 
-PODFILE CHECKSUM: bd7272d645dc53272d0bc6922eaa7c6e5b308ab3
+PODFILE CHECKSUM: f9a6a285e858c29de588878a244e431537f2311f
 
 COCOAPODS: 1.5.3
