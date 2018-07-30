@@ -6,17 +6,33 @@
 //  Copyright © 2018 Mustafa Sahinli. All rights reserved.
 //
 
-import UIKit
+
+
+/**
+ Klasse für die Überprüfung des Logins , sowie Definierung von mehreren Parametern.
+ 
+ - showHideButton: Definierung und Implementierung vom Anzeigen des Passwortes , je nach Klicken auf den Button.
+ - errorcode: Je nach Richtigkeit des Passwortes, wird durch die Definierung dieser Variable die Farbe der Authentifizierung  auf rot oder grün gestellt.
+ - passwort: Variable für das interne Speichern des Passwortes
+ - username: Variable für das interne Speichern des Benutzernamens.
+ ## Beispiel: ## ````
+ Erscheinen der Farbe für die Authentifizierung (ROT) bei falschem Login.
+ Erscheinen der Farbe für die Authentifizierung (Grün) bei richtigem Login.
+
+ ````
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 
 class ViewController: UIViewController {
 
     var isPasswordVisible = false
 
-    @IBOutlet weak var showHideButton: UIButton!
-    @IBOutlet weak var errorcode: UILabel!
-    @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var password: UITextField!
-    override func viewDidLoad() {
+    @IBOutlet weak var showHideButton: UIButton! ///  - showHideButton: Definierung und Implementierung vom Anzeigen des Passwortes , je nach Klicken auf den Button.
+
+    @IBOutlet weak var errorcode: UILabel! /// Je nach Richtigkeit des Passwortes, wird durch die Definierung dieser Variable die Farbe der Authentifizierung  auf rot oder grün gestellt.
+    @IBOutlet weak var username: UITextField! /// Variable für das interne Speichern des Benutzernamens.
+    
+    @IBOutlet weak var password: UITextField! /// Variable für das interne Speichern des Passwortes.
+    override func viewDidLoad() { /// Funktion für das Laden der View.
         super.viewDidLoad()
         showHideButton.setImage(#imageLiteral(resourceName: "hide"), for: .normal)
     }

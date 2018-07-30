@@ -6,8 +6,12 @@
 //  Copyright © 2018 Mustafa Sahinli. All rights reserved.
 //
 
+/// AppDelegate Klasse des Projektes.
+
 import UIKit
 import IQKeyboardManagerSwift
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

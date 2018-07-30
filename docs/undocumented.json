@@ -2,56 +2,56 @@
   "warnings": [
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 13,
+      "line": 17,
       "symbol": "AppDelegate",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 15,
+      "line": 19,
       "symbol": "AppDelegate.window",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 17,
+      "line": 21,
       "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 23,
+      "line": 27,
       "symbol": "AppDelegate.applicationWillResignActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 26,
+      "line": 30,
       "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 29,
+      "line": 33,
       "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 32,
+      "line": 36,
       "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/AppDelegate.swift",
-      "line": 35,
+      "line": 39,
       "symbol": "AppDelegate.applicationWillTerminate(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -359,84 +359,49 @@
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 11,
-      "symbol": "ViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 13,
+      "line": 27,
       "symbol": "ViewController.isPasswordVisible",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 15,
+      "line": 29,
       "symbol": "ViewController.showHideButton",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 16,
-      "symbol": "ViewController.errorcode",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 17,
-      "symbol": "ViewController.username",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 18,
-      "symbol": "ViewController.password",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 19,
-      "symbol": "ViewController.viewDidLoad()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 24,
+      "line": 40,
       "symbol": "ViewController.login(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 42,
+      "line": 58,
       "symbol": "ViewController.didReceiveMemoryWarning()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 46,
+      "line": 62,
       "symbol": "ViewController.fadeViewIn(view:isLoginSuccessful:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 58,
+      "line": 74,
       "symbol": "ViewController.changeViewToMenu()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 62,
+      "line": 78,
       "symbol": "ViewController.showHideButtonTouchUpInsideHandler(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
