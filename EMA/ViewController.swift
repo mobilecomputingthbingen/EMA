@@ -7,7 +7,6 @@
 //
 
 
-
 /**
  Klasse für die Überprüfung des Logins , sowie Definierung von mehreren Parametern.
  

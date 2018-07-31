@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33A89AA421106DAD00FD0859 /* TraubenleseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A89AA321106DAD00FD0859 /* TraubenleseTableViewController.swift */; };
+		33A89AA621106DC500FD0859 /* TraubenleseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A89AA521106DC500FD0859 /* TraubenleseCell.swift */; };
+		33A89AA821106DE800FD0859 /* TraubenleseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A89AA721106DE800FD0859 /* TraubenleseViewController.swift */; };
 		33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5892101EC5E002A475E /* AppDelegate.swift */; };
 		33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF58B2101EC5E002A475E /* ViewController.swift */; };
 		33FDF58F2101EC5E002A475E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDF58D2101EC5E002A475E /* Main.storyboard */; };
@@ -52,6 +55,9 @@
 
 /* Begin PBXFileReference section */
 		24B5A536205C649C4DF669E9 /* Pods-EMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMA/Pods-EMA.debug.xcconfig"; sourceTree = "<group>"; };
+		33A89AA321106DAD00FD0859 /* TraubenleseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraubenleseTableViewController.swift; sourceTree = "<group>"; };
+		33A89AA521106DC500FD0859 /* TraubenleseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraubenleseCell.swift; sourceTree = "<group>"; };
+		33A89AA721106DE800FD0859 /* TraubenleseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraubenleseViewController.swift; sourceTree = "<group>"; };
 		33FDF5862101EC5E002A475E /* EMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FDF5892101EC5E002A475E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33FDF58B2101EC5E002A475E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 				7E8C36A621089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift */,
 				7E8C36A82108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift */,
 				7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */,
+				33A89AA321106DAD00FD0859 /* TraubenleseTableViewController.swift */,
+				33A89AA521106DC500FD0859 /* TraubenleseCell.swift */,
+				33A89AA721106DE800FD0859 /* TraubenleseViewController.swift */,
 			);
 			path = EMA;
 			sourceTree = "<group>";
@@ -459,11 +468,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A89AA421106DAD00FD0859 /* TraubenleseTableViewController.swift in Sources */,
 				7E089839210BB6860085EA50 /* Field.swift in Sources */,
 				33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */,
 				7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */,
 				7E089836210B94380085EA50 /* WorkState.swift in Sources */,
 				33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */,
+				33A89AA621106DC500FD0859 /* TraubenleseCell.swift in Sources */,
+				33A89AA821106DE800FD0859 /* TraubenleseViewController.swift in Sources */,
 				7E9D32C721064384001A49F1 /* MenuCollectionViewCell.swift in Sources */,
 				7E9D32C921065B78001A49F1 /* SectionHeaderView.swift in Sources */,
 				7E089834210B5F220085EA50 /* DatabaseModelNormal.swift in Sources */,
