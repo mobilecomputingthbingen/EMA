@@ -24,7 +24,6 @@
 		7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67090C2105F94600072FE9 /* MenuViewController.swift */; };
 		7E8C36A721089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36A621089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift */; };
 		7E8C36A92108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36A82108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift */; };
-		7E8C36AB2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */; };
 		7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F898B210619C600BA2FEE /* DatabaseManager.swift */; };
 		7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */; };
 		7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */; };
@@ -483,7 +482,6 @@
 				BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */,
 				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
 				BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */,
-				7E8C36AB2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift in Sources */,
 				7E8C36A721089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift in Sources */,
 				7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */,
 			);
