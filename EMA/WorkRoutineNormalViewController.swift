@@ -119,7 +119,7 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == fieldPicker {
-            field = fieldItems[row].name //Fehler 
+            field = fieldItems[row].name //Fehler  
         } else if pickerView == workingHourPicker {
             workingHour = Int(workingHourItems[row])!
         }
