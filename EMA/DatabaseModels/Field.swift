@@ -17,6 +17,6 @@ class Field: Object {
 }
 
 class Location: Object {
-    @objc var latitude = 0.0
-    @objc var longitude = 0.0
+    @objc dynamic var latitude = 0.0
+    @objc dynamic var longitude = 0.0
 }

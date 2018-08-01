@@ -41,7 +41,7 @@ class FieldsViewController: UITableViewController {
                     let saveAction = UIAlertAction(title: "Speichern", style: .default) { (alert) in
                         let nameTextField = alertController.textFields![0] as UITextField
                         let sortTextField = alertController.textFields![1] as UITextField
-                        self.saveToDB(name: nameTextField.text!, sort: sortTextField.text!)
+                        self.saveToDB(name: nameTextField.text!, sort: sortTextField.text!, index: index.item)
                     }
                     let cancelAction = UIAlertAction(title: "Abbrechen", style: .cancel, handler: nil)
                     alertController.addAction(saveAction)
@@ -53,24 +53,47 @@ class FieldsViewController: UITableViewController {
         }
         edit.backgroundColor = UIColor.blue
         let delete = UITableViewRowAction(style: .destructive, title: "Löschen") { (action, index) in
-            print("Delete tapped")
+            let alertController = UIAlertController(title: "Feld löschen?", message: nil, preferredStyle: .alert)
+            let cancelButton = UIAlertAction(title: "Abbrechen", style: .cancel, handler: nil)
+            let deleteButton = UIAlertAction(title: "Löschen", style: .destructive, handler: { (action) in
+                self.deleteFromDB(at: index.item)
+            })
+            alertController.addAction(cancelButton)
+            alertController.addAction(deleteButton)
+            self.present(alertController, animated: true, completion: nil)
         }
         return [delete, edit]
     }
-    @objc private func saveToDB(name: String, sort: String) {
-        if !name.isEmpty || !sort.isEmpty {
-    
-        } else {
-            alert(message: "Feldname oder Reben Sorte darf nicht leer sein")
+    @objc private func saveToDB(name: String, sort: String, index: Int) {
+        if let field = fields?[index] {
+            if let field = field as? Field {
+                if !name.isEmpty || !sort.isEmpty {
+                    let realm = try! Realm() // swiftlint:disable:this force_try
+                    try! realm.write { // swiftlint:disable:this force_try
+                        field.name = name
+                        field.sort = sort
+                    }
+                    self.tableView.reloadData()
+                } else {
+                    alert(message: "Feldname oder Reben Sorte darf nicht leer sein")
+                }
+            }
         }
+
     }
     @objc private func deleteFromDB(at index: Int) {
-        
+        if let field = fields?[index] {
+            if let field = field as? Field {
+                DatabaseManager.shared.deleteFromDatabase(object: field)
+            }
+        }
+        self.tableView.reloadData()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.topItem?.title = "Felder"
         self.navigationController?.navigationBar.topItem?.rightBarButtonItem = nil
+        self.tableView.reloadData()
     }
     private func alert(message: String) {
         let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)

@@ -18,11 +18,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             if canDrawField {
                 self.navigationController?.navigationBar.topItem?.title = "Feld anlegen"
                 let saveButton = UIBarButtonItem(image: UIImage(named: "check"), style: .plain, target: self, action: #selector(saveField))
+                let cancelButton = UIBarButtonItem(title: "Abbrechen", style: .plain, target: self, action: #selector(cancelCreation))
                 self.navigationController?.navigationBar.topItem?.rightBarButtonItem = saveButton
+                self.navigationController?.navigationBar.topItem?.leftBarButtonItem = cancelButton
+                savedDrawnField = false
             } else {
                 self.navigationController?.navigationBar.topItem?.title = "Karte"
                 let addButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: nil)
                 self.navigationController?.navigationBar.topItem?.rightBarButtonItem = addButton
+                self.navigationController?.navigationBar.topItem?.leftBarButtonItem = nil
             }
         }
     }
@@ -52,7 +56,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                     let polyline = MKPolyline(coordinates: &points, count: points.count)
                     mapView.add(polyline)
                 } else {
-                    mapView.removeOverlays(mapView.overlays)
+                    if let lastOverlay = self.mapView.overlays.last {
+                        self.mapView.remove(lastOverlay)
+                    }
                     let polygon = MKPolygon(coordinates: &points, count: points.count)
                     mapView.add(polygon)
                     print("\(getSizeOfField()) FieldSize")
@@ -112,6 +118,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             }
             DatabaseManager.shared.addToDatabase(object: field)
             self.canDrawField = false
+            self.view.setNeedsDisplay()
+            self.points.removeAll()
+            savedDrawnField = true
         } else {
             alert(message: "Feldname oder Reben Sorte darf nicht leer sein")
         }
@@ -119,16 +128,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     private func drawFieldsOnMap() {
         var fieldPoints = [CLLocationCoordinate2D]()
         for field in fields! {
-            guard let field = field as? Field else { return }
-            for position in field.position {
-                let lat = position.latitude
-                let long = position.longitude
-                print(position.latitude)
-                let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-                fieldPoints.append(coordinate)
-                print(fieldPoints)
-                let polygon = MKPolygon(coordinates: &fieldPoints, count: fieldPoints.count)
-                self.mapView.add(polygon)
+            if let field = field as? Field {
+                for position in field.position {
+                    let lat = position.latitude
+                    let long = position.longitude
+                    print(position.latitude)
+                    let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                    fieldPoints.append(coordinate)
+                    print(fieldPoints)
+                    let polygon = MKPolygon(coordinates: &fieldPoints, count: fieldPoints.count)
+                    self.mapView.add(polygon)
+                }
                 fieldPoints.removeAll()
             }
         }
@@ -174,6 +184,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let cancel = UIAlertAction(title: "Schließen", style: .cancel, handler: nil)
         alert.addAction(cancel)
         self.present(alert, animated: true, completion: nil)
+    }
+    private var savedDrawnField = false
+    @objc private func cancelCreation() {
+        self.canDrawField = false
+        if let lastOverlay = self.mapView.overlays.last {
+            if !savedDrawnField {
+                self.mapView.remove(lastOverlay)
+            }
+        }
     }
 
 }
