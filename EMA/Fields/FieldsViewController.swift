@@ -61,7 +61,6 @@ class FieldsViewController: UITableViewController {
                     self.present(alertController, animated: true, completion: nil)
                 }
             }
-
         }
         edit.backgroundColor = UIColor.blue
         let delete = UITableViewRowAction(style: .destructive, title: "Löschen") { (action, index) in
