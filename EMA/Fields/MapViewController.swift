@@ -143,26 +143,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             }
         }
     }
-    private func getCenterOfField() -> CLLocationCoordinate2D {
-        var xVal: Float = 0.0
-        var yVal: Float = 0.0
-        var zVal: Float = 0.0
-        for points in points {
-            let lat = GLKMathDegreesToRadians(Float(points.latitude))
-            let long = GLKMathDegreesToRadians(Float(points.longitude))
-            xVal += cos(lat) * cos(long)
-            yVal += cos(lat) * sin(long)
-            zVal += sin(lat)
-        }
-        xVal /= Float(points.count)
-        yVal /= Float(points.count)
-        zVal /= Float(points.count)
-        let resLong = atan2f(yVal, xVal)
-        let resHyp = sqrtf(xVal * xVal + yVal * yVal)
-        let resLat = atan2f(zVal, resHyp)
-        let result = CLLocationCoordinate2D(latitude: CLLocationDegrees(GLKMathRadiansToDegrees(resLat)), longitude: CLLocationDegrees(GLKMathRadiansToDegrees(resLong)))
-        return result
-    }
     let kEarthRadius = 6378137.0
     // CLLocationCoordinate2D uses degrees but we need radians
     func radians(degrees: Double) -> Double {

@@ -6,6 +6,18 @@
 //  Copyright © 2018 Mustafa Sahinli. All rights reserved.
 //
 
+/**
+ Klasse für die Bearbeitung der Felder, zum Bearbeiten der Felder eine Swipe-Geste an der ausgewählten Stelle
+ 
+ - deleteFromDB: Löscht das ausgewählte Feld von der Datenbank
+ - saveToDB: Speichert die vorgenommene Änderung
+ ## Beispiel: ## ````
+ Erscheinen der Farbe für die Authentifizierung (ROT) bei falschem Login.
+ Erscheinen der Farbe für die Authentifizierung (Grün) bei richtigem Login.
+ 
+ ````
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
+
 import UIKit
 import RealmSwift
 
@@ -81,7 +93,7 @@ class FieldsViewController: UITableViewController {
         }
 
     }
-    @objc private func deleteFromDB(at index: Int) {
+    @objc private func deleteFromDB(at index: Int) {  /// -deleteFromDB
         if let field = fields?[index] {
             if let field = field as? Field {
                 DatabaseManager.shared.deleteFromDatabase(object: field)
