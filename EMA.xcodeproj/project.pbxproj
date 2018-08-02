@@ -34,6 +34,8 @@
 		A807A61BC9E0C242A988F6DF /* Pods_EMAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F6A68807E800EAC18FD68 /* Pods_EMAUITests.framework */; };
 		BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42B2104DA1300BDA189 /* MapViewController.swift */; };
 		BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42D2104DA1E00BDA189 /* FieldsViewController.swift */; };
+		BD3438C82113B9B300743ADE /* PflanzenschutzTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3438C72113B9B300743ADE /* PflanzenschutzTableVC.swift */; };
+		BD3438CA2113BA1000743ADE /* PflanzenschutzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3438C92113BA1000743ADE /* PflanzenschutzViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		8B4B1147F753B6BA00146112 /* Pods-EMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMA.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMA/Pods-EMA.release.xcconfig"; sourceTree = "<group>"; };
 		BD09F42B2104DA1300BDA189 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BD09F42D2104DA1E00BDA189 /* FieldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsViewController.swift; sourceTree = "<group>"; };
+		BD3438C72113B9B300743ADE /* PflanzenschutzTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PflanzenschutzTableVC.swift; sourceTree = "<group>"; };
+		BD3438C92113BA1000743ADE /* PflanzenschutzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PflanzenschutzViewController.swift; sourceTree = "<group>"; };
 		C32D695FDAFE233D628C97CD /* Pods_EMATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86632A3915F1A8B818F8628 /* Pods-EMATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMATests/Pods-EMATests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD4F6A68807E800EAC18FD68 /* Pods_EMAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +182,8 @@
 				33A89AA321106DAD00FD0859 /* TraubenleseTableViewController.swift */,
 				33A89AA521106DC500FD0859 /* TraubenleseCell.swift */,
 				33A89AA721106DE800FD0859 /* TraubenleseViewController.swift */,
+				BD3438C72113B9B300743ADE /* PflanzenschutzTableVC.swift */,
+				BD3438C92113BA1000743ADE /* PflanzenschutzViewController.swift */,
 			);
 			path = EMA;
 			sourceTree = "<group>";
@@ -483,9 +489,11 @@
 				7E8C36A92108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift in Sources */,
 				BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */,
 				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
+				BD3438CA2113BA1000743ADE /* PflanzenschutzViewController.swift in Sources */,
 				BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */,
 				7E8C36A721089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift in Sources */,
 				7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */,
+				BD3438C82113B9B300743ADE /* PflanzenschutzTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
