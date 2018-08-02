@@ -42,7 +42,7 @@ class ViewController: UIViewController {
 
         let isLoginSuccessful = loginManager.tryLogin(username: self.username.text!, password: self.password.text!)
 
-        if isLoginSuccessful {
+        if isLoginSuccessful { //
             let defaults = UserDefaults.standard
             defaults.set(username.text, forKey: "CurrentUsername") //
             self.errorcode.textColor = UIColor.green
