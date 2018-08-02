@@ -17,6 +17,7 @@
 		33FDF5942101EC5F002A475E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDF5922101EC5F002A475E /* LaunchScreen.storyboard */; };
 		33FDF59F2101EC5F002A475E /* EMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF59E2101EC5F002A475E /* EMATests.swift */; };
 		33FDF5AA2101EC5F002A475E /* EMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5A92101EC5F002A475E /* EMAUITests.swift */; };
+		33FE10662113809600EF2C0A /* WorkRoutineNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */; };
 		69189DED57C1854E9B7DC768 /* Pods_EMATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32D695FDAFE233D628C97CD /* Pods_EMATests.framework */; };
 		7E089834210B5F220085EA50 /* DatabaseModelNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */; };
 		7E089836210B94380085EA50 /* WorkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089835210B94380085EA50 /* WorkState.swift */; };
@@ -467,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FE10662113809600EF2C0A /* WorkRoutineNormalViewController.swift in Sources */,
 				33A89AA421106DAD00FD0859 /* TraubenleseTableViewController.swift in Sources */,
 				7E089839210BB6860085EA50 /* Field.swift in Sources */,
 				33FDF58C2101EC5E002A475E /* ViewController.swift in Sources */,
