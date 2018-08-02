@@ -11,8 +11,4 @@ import Foundation
 import UIKit
 
 class TraubenleseTableViewController: UITableViewController {
-    
-    
-    
-    
 }

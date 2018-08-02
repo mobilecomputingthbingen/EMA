@@ -11,8 +11,6 @@
 import UIKit
 import IQKeyboardManagerSwift
 
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

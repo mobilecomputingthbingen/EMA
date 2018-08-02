@@ -11,11 +11,9 @@ import Foundation
 import UIKit
 
 class TraubenleseNormalCell: UITableViewCell {
-    
+
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var fieldLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var workHourLabel: UILabel!
-
- 
 }

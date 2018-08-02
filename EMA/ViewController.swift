@@ -6,7 +6,6 @@
 //  Copyright © 2018 Mustafa Sahinli. All rights reserved.
 //
 
-
 /**
  Klasse für die Überprüfung des Logins , sowie Definierung von mehreren Parametern.
  
@@ -29,7 +28,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var errorcode: UILabel! /// Je nach Richtigkeit des Passwortes, wird durch die Definierung dieser Variable die Farbe der Authentifizierung  auf rot oder grün gestellt.
     @IBOutlet weak var username: UITextField! /// Variable für das interne Speichern des Benutzernamens.
-    
+
     @IBOutlet weak var password: UITextField! /// Variable für das interne Speichern des Passwortes.
     override func viewDidLoad() { /// Funktion für das Laden der View.
         super.viewDidLoad()
@@ -42,9 +41,9 @@ class ViewController: UIViewController {
 
         let isLoginSuccessful = loginManager.tryLogin(username: self.username.text!, password: self.password.text!)
 
-        if isLoginSuccessful {
+        if isLoginSuccessful { //
             let defaults = UserDefaults.standard
-            defaults.set(username.text, forKey: "CurrentUsername")
+            defaults.set(username.text, forKey: "CurrentUsername") //
             self.errorcode.textColor = UIColor.green
             self.errorcode.text = "Authentifizierung erfolgreich"
             fadeViewIn(view: errorcode, isLoginSuccessful: true)
