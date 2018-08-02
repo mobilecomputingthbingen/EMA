@@ -31,11 +31,6 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
     var workingHour = 1
     var field = ""
 
-    override func viewWillAppear(_ animated: Bool) {
-        fieldItems.removeAll()
-        getAllObjects()
-    }
-
     func getAllObjects() {
         let objects = databaseManager.getObjects(type: Field.self)
         for element in objects {
@@ -47,6 +42,9 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        fieldItems.removeAll()
+        getAllObjects()
 
         fieldPicker.dataSource = self
         fieldPicker.delegate = self

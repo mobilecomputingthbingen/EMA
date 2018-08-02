@@ -9,8 +9,8 @@
 import UIKit
 
 class MenuViewController: UICollectionViewController {
-    let items = ["Entlauben", "Traubenlese", "Düngung", "Pflanzenschutz"]
-    let itemBackgroundColor = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green]
+    let items = ["Entlauben", "Traubenlese", "Düngung", "Pflanzenschutz", "Felder"]
+    let itemBackgroundColor = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green, UIColor.gray]
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -38,6 +38,8 @@ class MenuViewController: UICollectionViewController {
             print( "Düngung")
         case 3  :
             print( "Pflanzenschutz")
+        case 4  :
+            performSegue(withIdentifier: "showMap", sender: self)
         default :
             print( "default")
         }

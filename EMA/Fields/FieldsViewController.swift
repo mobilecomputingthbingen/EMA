@@ -23,7 +23,7 @@ import RealmSwift
 
 class FieldsViewController: UITableViewController {
     var fields: Results<Object>?
-    let cellId = "cellId"
+    let cellId = "fieldCell"
     override func viewDidLoad() {
         super.viewDidLoad()
         fields = DatabaseManager.shared.getObjects(type: Field.self)
@@ -39,18 +39,23 @@ class FieldsViewController: UITableViewController {
         cell.detailTextLabel?.text = "Reben Sorte: \(field.sort)"
         return cell
     }
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let edit = UITableViewRowAction(style: .normal, title: "Bearbeit.") { (action, index) in
+    override func tableView(_ tableView: UITableView,
+                            editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let edit = UITableViewRowAction(style: .normal,
+                                        title: "Bearbeit.") { (_, index) in
             if let field = self.fields?[indexPath.item] {
                 if let field = field as? Field {
-                    let alertController = UIAlertController(title: "Feld bearbeiten", message: nil, preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Feld bearbeiten",
+                                                            message: nil,
+                                                            preferredStyle: .alert)
                     alertController.addTextField { (textField) in
                         textField.text = field.name
                     }
                     alertController.addTextField { (textField) in
                         textField.text = field.sort
                     }
-                    let saveAction = UIAlertAction(title: "Speichern", style: .default) { (alert) in
+                    let saveAction = UIAlertAction(title: "Speichern",
+                                                   style: .default) { (_) in
                         let nameTextField = alertController.textFields![0] as UITextField
                         let sortTextField = alertController.textFields![1] as UITextField
                         self.saveToDB(name: nameTextField.text!, sort: sortTextField.text!, index: index.item)
@@ -63,10 +68,10 @@ class FieldsViewController: UITableViewController {
             }
         }
         edit.backgroundColor = UIColor.blue
-        let delete = UITableViewRowAction(style: .destructive, title: "Löschen") { (action, index) in
+        let delete = UITableViewRowAction(style: .destructive, title: "Löschen") { (_, index) in
             let alertController = UIAlertController(title: "Feld löschen?", message: nil, preferredStyle: .alert)
             let cancelButton = UIAlertAction(title: "Abbrechen", style: .cancel, handler: nil)
-            let deleteButton = UIAlertAction(title: "Löschen", style: .destructive, handler: { (action) in
+            let deleteButton = UIAlertAction(title: "Löschen", style: .destructive, handler: { (_) in
                 self.deleteFromDB(at: index.item)
             })
             alertController.addAction(cancelButton)
