@@ -11,4 +11,12 @@ import RealmSwift
 
 class Field: Object {
     @objc dynamic var name = ""
+    @objc dynamic var sort = ""
+    @objc dynamic var size = 0.0
+    let position = List<Location>()
+}
+
+class Location: Object {
+    @objc dynamic var latitude = 0.0
+    @objc dynamic var longitude = 0.0
 }

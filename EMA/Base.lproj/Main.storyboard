@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FDm-L0-ots">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -140,26 +140,39 @@
             </objects>
             <point key="canvasLocation" x="-869" y="882"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="pHf-y6-EK1">
+        <!--Felder-->
+        <scene sceneID="CSh-2y-Fki">
             <objects>
-                <viewController id="MZf-7J-iC9" customClass="FieldsViewController" customModule="EMA" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QYc-pK-NuB">
+                <tableViewController id="5mL-UJ-hEc" customClass="FieldsViewController" customModule="EMA" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0Yw-CZ-KIy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="O7M-CP-bNl"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="J4n-O1-ayB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HXs-gd-x6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2my-Lb-GGM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2my-Lb-GGM" id="ERz-KE-irP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5mL-UJ-hEc" id="x5s-81-bmL"/>
+                            <outlet property="delegate" destination="5mL-UJ-hEc" id="jhD-ob-zk5"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Felder" id="pus-PI-MWW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Iq-L2-RDN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047" y="1213"/>
+            <point key="canvasLocation" x="1046" y="1252"/>
         </scene>
-        <!--Item 1-->
+        <!--Karte-->
         <scene sceneID="GOn-5h-umd">
             <objects>
-                <viewController id="YA2-zP-MSC" customClass="MapViewController" customModule="EMA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Karte" id="YA2-zP-MSC" customClass="MapViewController" customModule="EMA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fbk-ip-kuW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +190,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aT1-i7-x5x"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="uP1-wn-0Wg"/>
+                    <tabBarItem key="tabBarItem" title="Karte" id="uP1-wn-0Wg"/>
                     <connections>
                         <outlet property="mapView" destination="wwU-9Y-Fq6" id="4lx-0F-X8P"/>
                     </connections>
@@ -473,7 +486,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="YA2-zP-MSC" kind="relationship" relationship="viewControllers" id="fWO-L9-Pkj"/>
-                        <segue destination="MZf-7J-iC9" kind="relationship" relationship="viewControllers" id="EED-8B-ude"/>
+                        <segue destination="5mL-UJ-hEc" kind="relationship" relationship="viewControllers" id="rbA-jI-5eH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htX-MT-JSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
