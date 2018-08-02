@@ -44,7 +44,7 @@ class ViewController: UIViewController {
 
         if isLoginSuccessful {
             let defaults = UserDefaults.standard
-            defaults.set(username.text, forKey: "CurrentUsername")
+            defaults.set(username.text, forKey: "CurrentUsername") //
             self.errorcode.textColor = UIColor.green
             self.errorcode.text = "Authentifizierung erfolgreich"
             fadeViewIn(view: errorcode, isLoginSuccessful: true)
