@@ -115,6 +115,7 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
         }
     }
 
+    // sets the local variables
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == fieldPicker {
             if fieldItems.count > 0 {
