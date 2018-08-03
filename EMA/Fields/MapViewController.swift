@@ -10,10 +10,15 @@ import UIKit
 import MapKit
 import GLKit
 import RealmSwift
-
+/**
+ Klasse für das Erstellen der Felder auf der Karte.
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+    ///Variable für alle Felder in der DB.
     var fields: Results<Object>?
+    ///Variable für den Button Zürück
     var backButton = UIBarButtonItem()
+    ///Boolvariable für das Zeichnen der Felder.
     var canDrawField: Bool = false {
         didSet {
             if canDrawField {
@@ -26,8 +31,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                                                    style: .plain,
                                                    target: self,
                                                    action: #selector(cancelCreation))
-                //self.navigationController?.navigationBar.topItem?.rightBarButtonItem = saveButton
-                //self.navigationController?.navigationBar.topItem?.leftBarButtonItem = cancelButton
                 self.tabBarController?.navigationItem.rightBarButtonItem = saveButton
                 self.tabBarController?.navigationItem.leftBarButtonItem = cancelButton
                 savedDrawnField = false
@@ -42,9 +45,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             }
         }
     }
+    ///Variable der Map
     @IBOutlet weak var mapView: MKMapView!
+    ///Punkte der Positionen auf der Karte.
     var points = [CLLocationCoordinate2D]()
-
+    ///Anzeigen der View
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fields = DatabaseManager.shared.getObjects(type: Field.self)
@@ -52,7 +57,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         self.mapView.delegate = self
         self.tabBarController?.title = "Karte"
     }
-
+    ///Erscheinen des Views
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let addButton = UIBarButtonItem(image: UIImage(named: "add"),
@@ -61,11 +66,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                                         action: #selector(addField))
         self.tabBarController?.navigationItem.rightBarButtonItem = addButton
     }
-
+    ///Hinzufügen eines Feldes
     @objc private func addField() {
         canDrawField = true
     }
-
+    ///Geste zum Zeichnen
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if canDrawField {
             if let touch = touches.first {
@@ -85,7 +90,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             }
         }
     }
-
+    ///Rendering der Felder als Zeichenobjekte
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MKPolyline {
             let polylineRenderer = MKPolylineRenderer(overlay: overlay)
@@ -101,7 +106,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
         return MKPolylineRenderer(overlay: overlay)
     }
-
+    ///Speichern des Feldes in die Zwischenablage
     @objc private func saveField() {
         if points.count < 3 {
             alert(message: "Lege min. 3 Punkte an")
@@ -124,7 +129,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             self.present(alertController, animated: true, completion: nil)
         }
     }
-
+    ///Speichern in die DB.
     @objc private func saveToDB(name: String, sort: String) {
         if !name.isEmpty || !sort.isEmpty {
             let field: Field = Field()
@@ -146,7 +151,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             alert(message: "Feldname oder Reben Sorte darf nicht leer sein")
         }
     }
-
+    ///Zeichnen auf die Karte
     private func drawFieldsOnMap() {
         var fieldPoints = [CLLocationCoordinate2D]()
         for field in fields! {
@@ -165,13 +170,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             }
         }
     }
-
+    ///Radius für die Erde
     let kEarthRadius = 6378137.0
-    // CLLocationCoordinate2D uses degrees but we need radians
+    /// Hilfsfunktion für das Errechnen von Radius auf Grad
     func radians(degrees: Double) -> Double {
         return degrees * .pi / 180
     }
-
+    ///Funktion für die Größe eines Feldes.
     private func getSizeOfField() -> Double {
         guard points.count > 2 else { return 0 }
         var area = 0.0
@@ -184,15 +189,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         area = -(area * kEarthRadius * kEarthRadius / 2)
         return max(area, -area)
     }
-
+    ///Funktion zum Anzeigen einer Nachricht.
     private func alert(message: String) {
         let alert = UIAlertController(title: message, message: nil, preferredStyle: .alert)
         let cancel = UIAlertAction(title: "Schließen", style: .cancel, handler: nil)
         alert.addAction(cancel)
         self.present(alert, animated: true, completion: nil)
     }
-
+   ///Variable für das zwischenpeichern
     private var savedDrawnField = false
+    ///Funktion für das Abbrechen der Zeichnung
     @objc private func cancelCreation() {
         self.canDrawField = false
         if let lastOverlay = self.mapView.overlays.last {

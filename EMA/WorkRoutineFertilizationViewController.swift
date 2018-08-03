@@ -28,7 +28,6 @@ class WorkRoutineFertilizationViewController: UIViewController, UIPickerViewData
     @IBOutlet weak var organicButton: UIButton!
     ///Variable für Gewicht
     @IBOutlet weak var amountText: UITextField!
-   
     ///Status
     var workState: WorkState!
     ///Variable Database Manager
