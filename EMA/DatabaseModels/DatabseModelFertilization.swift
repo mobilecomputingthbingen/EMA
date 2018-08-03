@@ -12,7 +12,6 @@ import RealmSwift
  Klasse für die Datenbank der Funktion Düngung.
  **Note :** Für weitere Informationen auf die Parameter klicken.*/
 class DatabaseModelFertilization: Object {
-    
         ///Variable für das Datum
     @objc dynamic var date = Date()
     ///Variable für das gespeicherte Feld.
