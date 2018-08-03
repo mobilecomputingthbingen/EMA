@@ -181,7 +181,7 @@ class PflanzenschutzViewController: UIViewController, UIPickerViewDelegate {
         mainView.addSubview(dueTextField)
         dueTextField.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint(item: dueTextField, attribute: .left, relatedBy: .equal, toItem: mainView, attribute: .left, multiplier: 1.0, constant: 16).isActive = true   // swiftlint:disable:this line_length
-        NSLayoutConstraint(item: dueTextField, attribute: .top, relatedBy: .equal, toItem: dueLabel, attribute: .bottom, multiplier: 1.0, constant: 8).isActive = true  // swiftlint:disable:this line_length
+        NSLayoutConstraint(item: dueTextField, attribute: .top, relatedBy: .equal, toItem: dueLabel, attribute: .bottom, multiplier: 1.0, constant: 8).isActive = true  // swiftlint:disable:this line_length 
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == fieldPicker {
