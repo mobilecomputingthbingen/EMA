@@ -48,9 +48,9 @@ class MenuViewController: UICollectionViewController {
             self.navigationController?.pushViewController(workRoutineFertTableViewController!, animated: true)
         case 3  :
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-           // let pflanzenschutzNormalTableViewController = mainStoryboard.instantiateViewController(
-            //    withIdentifier: "PflanzenschutzNormalTable") as? PflanzenschutzTableVC
-            //self.navigationController?.pushViewController(pflanzenschutzNormalTableViewController!, animated: true)
+            let pflanzenschutzNormalTableViewController = mainStoryboard.instantiateViewController(
+                withIdentifier: "PflanzenschutzNormalTable") as? PflanzenschutzTableVC
+            self.navigationController?.pushViewController(pflanzenschutzNormalTableViewController!, animated: true)
         case 4  :
             performSegue(withIdentifier: "showMap", sender: self)
         default :
