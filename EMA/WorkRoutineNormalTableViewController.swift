@@ -84,7 +84,8 @@ class WorkRoutineNormalTableViewController: UITableViewController {
         return cell
     }
 
-    // Override to support conditional editing of the table view.
+    // Override to support conditio nal editing of the table view.
+    //test
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
