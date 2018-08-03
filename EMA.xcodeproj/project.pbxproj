@@ -39,7 +39,6 @@
 		A807A61BC9E0C242A988F6DF /* Pods_EMAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F6A68807E800EAC18FD68 /* Pods_EMAUITests.framework */; };
 		BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42B2104DA1300BDA189 /* MapViewController.swift */; };
 		BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD09F42D2104DA1E00BDA189 /* FieldsViewController.swift */; };
-		BD3438C82113B9B300743ADE /* PflanzenschutzTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3438C72113B9B300743ADE /* PflanzenschutzTableVC.swift */; };
 		BD3438CA2113BA1000743ADE /* PflanzenschutzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3438C92113BA1000743ADE /* PflanzenschutzViewController.swift */; };
 /* End PBXBuildFile section */
 
