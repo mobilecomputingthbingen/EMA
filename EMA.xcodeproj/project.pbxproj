@@ -156,6 +156,7 @@
 				33FDF5872101EC5E002A475E /* Products */,
 				62CB41CA107F128E98A52E6F /* Pods */,
 				103107A38CFE44B7CE7DD816 /* Frameworks */,
+				7E945BB02114CEED00C4A918 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,6 +250,14 @@
 				7E089835210B94380085EA50 /* WorkState.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		7E945BB02114CEED00C4A918 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		BD09F42A2104D88D00BDA189 /* Fields */ = {
