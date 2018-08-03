@@ -13,7 +13,7 @@ class Field: Object {
     @objc dynamic var name = ""
     @objc dynamic var sort = ""
     @objc dynamic var size = 0.0
-    let position = List<Location>()
+    let position = List<Location>() // Some chanes
 }
 
 class Location: Object {

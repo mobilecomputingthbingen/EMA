@@ -14,5 +14,5 @@ class DataBaseModelTraubenlese: Object {
     @objc dynamic var field = ""
     @objc dynamic var username = ""
     @objc dynamic var workingHour = 0
-    @objc dynamic var execution = 0
+    @objc dynamic var execution = 0 
 }
