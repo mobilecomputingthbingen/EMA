@@ -16,7 +16,10 @@ class PflanzenschutzTableVC: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        let addButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(add))
+        let addButton = UIBarButtonItem(image: UIImage(named: "add"),
+                                        style: .plain,
+                                        target: self,
+                                        action: #selector(add))
         self.navigationItem.rightBarButtonItem = addButton
     }
 
@@ -36,7 +39,7 @@ class PflanzenschutzTableVC: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    
+
     @objc func add() {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let workRoutineNormalViewController = mainStoryboard.instantiateViewController(
