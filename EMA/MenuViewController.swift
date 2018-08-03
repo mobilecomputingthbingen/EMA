@@ -41,7 +41,6 @@ class MenuViewController: UICollectionViewController {
             let traubenleseTableViewController = mainStoryboard.instantiateViewController(
                 withIdentifier: "TraubenleseTable") as? TraubenleseTableViewController
             self.navigationController?.pushViewController(traubenleseTableViewController!, animated: true)
-            
         case 2  :
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let workRoutineFertTableViewController = mainStoryboard.instantiateViewController(

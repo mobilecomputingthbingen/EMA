@@ -113,79 +113,58 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DataBaseTraubenlese.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
       "line": 12,
-      "symbol": "DataBaseModelTraubenlese",
+      "symbol": "DatabaseModelFertilization",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DataBaseTraubenlese.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
       "line": 13,
-      "symbol": "DataBaseModelTraubenlese.date",
+      "symbol": "DatabaseModelFertilization.date",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DataBaseTraubenlese.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
       "line": 14,
-      "symbol": "DataBaseModelTraubenlese.field",
+      "symbol": "DatabaseModelFertilization.field",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DataBaseTraubenlese.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
       "line": 15,
-      "symbol": "DataBaseModelTraubenlese.username",
+      "symbol": "DatabaseModelFertilization.username",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DataBaseTraubenlese.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
       "line": 16,
-      "symbol": "DataBaseModelTraubenlese.workingHour",
+      "symbol": "DatabaseModelFertilization.workingHour",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DataBaseTraubenlese.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
       "line": 17,
-      "symbol": "DataBaseModelTraubenlese.execution",
+      "symbol": "DatabaseModelFertilization.category",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabaseModelNormal.swift",
-      "line": 12,
-      "symbol": "DatabaseModelNormalWorkingRoutine",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabaseModelNormal.swift",
-      "line": 13,
-      "symbol": "DatabaseModelNormalWorkingRoutine.date",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
+      "line": 18,
+      "symbol": "DatabaseModelFertilization.fertilize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabaseModelNormal.swift",
-      "line": 14,
-      "symbol": "DatabaseModelNormalWorkingRoutine.field",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabaseModelNormal.swift",
-      "line": 15,
-      "symbol": "DatabaseModelNormalWorkingRoutine.username",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabaseModelNormal.swift",
-      "line": 16,
-      "symbol": "DatabaseModelNormalWorkingRoutine.workingHour",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/DatabseModelFertilization.swift",
+      "line": 19,
+      "symbol": "DatabaseModelFertilization.amount",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -513,42 +492,35 @@
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 14,
-      "symbol": "MenuViewController.items",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "MenuViewController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 30,
+      "line": 32,
       "symbol": "MenuViewController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 56,
+      "line": 61,
       "symbol": "MenuViewController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 67,
+      "line": 72,
       "symbol": "MenuViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 86,
+      "line": 91,
       "symbol": "MenuViewController.didReceiveMemoryWarning()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -653,70 +625,70 @@
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "TraubenleseTableViewController.getAllObjects()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 30,
+      "line": 31,
       "symbol": "TraubenleseTableViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 40,
+      "line": 41,
       "symbol": "TraubenleseTableViewController.addButton(sender:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 49,
+      "line": 50,
       "symbol": "TraubenleseTableViewController.didReceiveMemoryWarning()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 55,
+      "line": 56,
       "symbol": "TraubenleseTableViewController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "TraubenleseTableViewController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 62,
+      "line": 63,
       "symbol": "TraubenleseTableViewController.tableView(_:cellForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 75,
+      "line": 76,
       "symbol": "TraubenleseTableViewController.tableView(_:canEditRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 78,
+      "line": 79,
       "symbol": "TraubenleseTableViewController.tableView(_:commit:forRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/TraubenleseTableViewController.swift",
-      "line": 87,
+      "line": 88,
       "symbol": "TraubenleseTableViewController.tableView(_:didSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -890,58 +862,352 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 23,
-      "symbol": "ViewController",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationCell.swift",
+      "line": 11,
+      "symbol": "WorkRoutineFertilizationCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationCell.swift",
+      "line": 12,
+      "symbol": "WorkRoutineFertilizationCell.dateLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationCell.swift",
+      "line": 13,
+      "symbol": "WorkRoutineFertilizationCell.fieldLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationCell.swift",
+      "line": 14,
+      "symbol": "WorkRoutineFertilizationCell.categoryLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationCell.swift",
+      "line": 15,
+      "symbol": "WorkRoutineFertilizationCell.fertilizerLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 11,
+      "symbol": "WorkRoutineFertilizationTableVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 13,
+      "symbol": "WorkRoutineFertilizationTableVC.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 15,
+      "symbol": "WorkRoutineFertilizationTableVC.databaseManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 17,
+      "symbol": "WorkRoutineFertilizationTableVC.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 24,
+      "symbol": "WorkRoutineFertilizationTableVC.getAllObjects()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 33,
+      "symbol": "WorkRoutineFertilizationTableVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 45,
+      "symbol": "WorkRoutineFertilizationTableVC.addButton(sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 55,
+      "symbol": "WorkRoutineFertilizationTableVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 59,
+      "symbol": "WorkRoutineFertilizationTableVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 64,
+      "symbol": "WorkRoutineFertilizationTableVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 80,
+      "symbol": "WorkRoutineFertilizationTableVC.tableView(_:canEditRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 84,
+      "symbol": "WorkRoutineFertilizationTableVC.tableView(_:commit:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationTableVC.swift",
+      "line": 94,
+      "symbol": "WorkRoutineFertilizationTableVC.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 12,
+      "symbol": "WorkRoutineFertilizationViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 14,
+      "symbol": "WorkRoutineFertilizationViewController.datePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 15,
+      "symbol": "WorkRoutineFertilizationViewController.fieldPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 16,
+      "symbol": "WorkRoutineFertilizationViewController.userNameLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 17,
+      "symbol": "WorkRoutineFertilizationViewController.workingHourPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 18,
+      "symbol": "WorkRoutineFertilizationViewController.fertilizePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 19,
+      "symbol": "WorkRoutineFertilizationViewController.mineralicButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 20,
+      "symbol": "WorkRoutineFertilizationViewController.organicButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 21,
+      "symbol": "WorkRoutineFertilizationViewController.amountText",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 23,
+      "symbol": "WorkRoutineFertilizationViewController.workState",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
       "line": 25,
-      "symbol": "ViewController.isPasswordVisible",
+      "symbol": "WorkRoutineFertilizationViewController.databaseManager",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
       "line": 27,
-      "symbol": "ViewController.showHideButton",
+      "symbol": "WorkRoutineFertilizationViewController.databaseModelFertilization",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 29,
+      "symbol": "WorkRoutineFertilizationViewController.defaults",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 31,
+      "symbol": "WorkRoutineFertilizationViewController.fieldItems",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 32,
+      "symbol": "WorkRoutineFertilizationViewController.workingHourItems",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 33,
+      "symbol": "WorkRoutineFertilizationViewController.mineralicItems",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 34,
+      "symbol": "WorkRoutineFertilizationViewController.organicItems",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 36,
+      "symbol": "WorkRoutineFertilizationViewController.workingHour",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 37,
+      "symbol": "WorkRoutineFertilizationViewController.field",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
       "line": 38,
-      "symbol": "ViewController.login(_:)",
+      "symbol": "WorkRoutineFertilizationViewController.category",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 39,
+      "symbol": "WorkRoutineFertilizationViewController.fertilize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 41,
+      "symbol": "WorkRoutineFertilizationViewController.fertilizeArray",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 43,
+      "symbol": "WorkRoutineFertilizationViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 56,
-      "symbol": "ViewController.didReceiveMemoryWarning()",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 70,
+      "symbol": "WorkRoutineFertilizationViewController.initializeView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 60,
-      "symbol": "ViewController.fadeViewIn(view:isLoginSuccessful:)",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 123,
+      "symbol": "WorkRoutineFertilizationViewController.getAllFields()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 72,
-      "symbol": "ViewController.changeViewToMenu()",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 132,
+      "symbol": "WorkRoutineFertilizationViewController.mineralicButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/ViewController.swift",
-      "line": 76,
-      "symbol": "ViewController.showHideButtonTouchUpInsideHandler(_:)",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 139,
+      "symbol": "WorkRoutineFertilizationViewController.organicButtonPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 145,
+      "symbol": "WorkRoutineFertilizationViewController.addButton(sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 181,
+      "symbol": "WorkRoutineFertilizationViewController.numberOfComponents(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 185,
+      "symbol": "WorkRoutineFertilizationViewController.pickerView(_:numberOfRowsInComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 197,
+      "symbol": "WorkRoutineFertilizationViewController.pickerView(_:titleForRow:forComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineFertilizationViewController.swift",
+      "line": 210,
+      "symbol": "WorkRoutineFertilizationViewController.pickerView(_:didSelectRow:inComponent:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -975,70 +1241,70 @@
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 25,
+      "line": 24,
       "symbol": "WorkRoutineNormalTableViewController.getAllObjects()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 34,
+      "line": 33,
       "symbol": "WorkRoutineNormalTableViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 46,
+      "line": 45,
       "symbol": "WorkRoutineNormalTableViewController.addButton(sender:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 56,
+      "line": 55,
       "symbol": "WorkRoutineNormalTableViewController.didReceiveMemoryWarning()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 63,
+      "line": 62,
       "symbol": "WorkRoutineNormalTableViewController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 67,
+      "line": 66,
       "symbol": "WorkRoutineNormalTableViewController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 72,
+      "line": 71,
       "symbol": "WorkRoutineNormalTableViewController.tableView(_:cellForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 89,
+      "line": 88,
       "symbol": "WorkRoutineNormalTableViewController.tableView(_:canEditRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 93,
+      "line": 92,
       "symbol": "WorkRoutineNormalTableViewController.tableView(_:commit:forRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalTableViewController.swift",
-      "line": 103,
+      "line": 102,
       "symbol": "WorkRoutineNormalTableViewController.tableView(_:didSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1115,42 +1381,42 @@
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalViewController.swift",
-      "line": 29,
+      "line": 28,
       "symbol": "WorkRoutineNormalViewController.fieldItems",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalViewController.swift",
-      "line": 31,
+      "line": 30,
       "symbol": "WorkRoutineNormalViewController.workingHour",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalViewController.swift",
-      "line": 32,
+      "line": 31,
       "symbol": "WorkRoutineNormalViewController.field",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalViewController.swift",
-      "line": 34,
+      "line": 33,
       "symbol": "WorkRoutineNormalViewController.getAllObjects()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalViewController.swift",
-      "line": 43,
+      "line": 42,
       "symbol": "WorkRoutineNormalViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkRoutineNormalViewController.swift",
-      "line": 88,
+      "line": 87,
       "symbol": "WorkRoutineNormalViewController.addButton(sender:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1215,13 +1481,6 @@
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkingRoutineNormalCell.swift",
       "line": 15,
       "symbol": "WorkingRoutineNormalCell.usernameLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/WorkingRoutineNormalCell.swift",
-      "line": 16,
-      "symbol": "WorkingRoutineNormalCell.workHourLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }

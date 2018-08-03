@@ -14,7 +14,7 @@
     <a title="ViewController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (3% documented)</p>
+        <p><a href="../index.html"> Docs</a> (17% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -34,10 +34,13 @@
                 <a href="../Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/DataBaseModelTraubenlese.html">DataBaseModelTraubenlese</a>
+                <a href="../Classes/DataBaseTraubenlese.html">DataBaseTraubenlese</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/DatabaseManager.html">DatabaseManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DatabaseModelFertilization.html">DatabaseModelFertilization</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/DatabaseModelNormalWorkingRoutine.html">DatabaseModelNormalWorkingRoutine</a>
@@ -82,6 +85,15 @@
                 <a href="../Classes/ViewController.html">ViewController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/WorkRoutineFertilizationCell.html">WorkRoutineFertilizationCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WorkRoutineFertilizationTableVC.html">WorkRoutineFertilizationTableVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WorkRoutineFertilizationViewController.html">WorkRoutineFertilizationViewController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/WorkRoutineNormalTableViewController.html">WorkRoutineNormalTableViewController</a>
               </li>
               <li class="nav-group-task">
@@ -112,7 +124,19 @@
 
                 </div>
               </div>
-            <p>Undocumented</p>
+            <p>Klasse für die Anzeige des Logings.</p>
+
+<ul>
+<li>showHideButton: Definierung und Implementierung vom Anzeigen des Passwortes , je nach Klicken auf den Button.</li>
+<li>errorcode: Durch die Definierung dieser Variable die Farbe der Authentifizierung  auf rot oder grün gestellt.</li>
+<li>passwort: Variable für das interne Speichern des Passwortes</li>
+<li>username: Variable für das interne Speichern des Benutzernamens.
+## Beispiel: ## &ldquo;&rdquo;
+Erscheinen der Farbe für die Authentifizierung (ROT) bei falschem Login.
+Erscheinen der Farbe für die Authentifizierung (Grün) bei richtigem Login.</li>
+</ul>
+<pre class="highlight swift"><code><span class="o">**</span><span class="kt">Note</span> <span class="p">:</span><span class="o">**</span> <span class="kt">Für</span> <span class="n">weitere</span> <span class="kt">Informationen</span> <span class="n">auf</span> <span class="n">die</span> <span class="kt">Parameter</span> <span class="n">klicken</span><span class="o">.</span>
+</code></pre>
 
           </section>
           <section class="section task-group-section">
@@ -131,7 +155,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Boolean Variable für die Anzeige des Passwortes.</p>
 
                       </div>
                       <div class="declaration">
@@ -158,7 +182,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Definierung und Implementierung vom Anzeigen des Passwortes.</p>
 
                       </div>
                       <div class="declaration">
@@ -186,7 +210,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Definierung und Implementierung vom Anzeigen des Passwortes.</p>
+                        <p>Durch die Definierung wird die Farbe der Auth. auf eine Farbe gestellt.</p>
 
                       </div>
                       <div class="declaration">
@@ -214,7 +238,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Durch die Definierung wird die Farbe der Auth. auf eine Farbe gestellt.</p>
+                        <p>Variable für das interne Speichern des Benutzernamens.</p>
 
                       </div>
                       <div class="declaration">
@@ -242,7 +266,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Variable für das interne Speichern des Benutzernamens.</p>
+                        <p>Variable für das interne Speichern des Passwortes.</p>
 
                       </div>
                       <div class="declaration">
@@ -270,7 +294,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Variable für das interne Speichern des Passwortes.</p>
+                        <p>Funktion für das Laden der View.</p>
 
                       </div>
                       <div class="declaration">
@@ -297,7 +321,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Funktion für das Login</p>
 
                       </div>
                       <div class="declaration">
@@ -306,33 +330,6 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@IBAction</span>
 <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@EMA@objc(cs)ViewController(im)didReceiveMemoryWarning"></a>
-                    <a name="//apple_ref/swift/Method/didReceiveMemoryWarning()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@EMA@objc(cs)ViewController(im)didReceiveMemoryWarning">didReceiveMemoryWarning()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">didReceiveMemoryWarning</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -352,7 +349,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Zuständige Methode für die Animation des Textfeldes.</p>
 
                       </div>
                       <div class="declaration">
@@ -379,7 +376,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Wechselt die Ansicht zum Menü.</p>
 
                       </div>
                       <div class="declaration">
@@ -406,7 +403,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Methode zum Aktivieren des Sichtfeldes für das Passwort.</p>
 
                       </div>
                       <div class="declaration">
