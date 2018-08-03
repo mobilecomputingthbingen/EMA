@@ -15,11 +15,11 @@ class MenuViewController: UICollectionViewController {
     let items = ["Entlauben", "Traubenlese", "Düngung", "Pflanzenschutz", "Felder"]
     /// Feld für die Farben der Anzeigenamen -> Bsp : Entlauben -> rot
     let itemBackgroundColor = [UIColor.blue, UIColor.red, UIColor.yellow, UIColor.green, UIColor.gray]///
-
+    ///Die Anzahl der Zeilen in der Collection View.
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { //
         return items.count
     }
-
+    ///Die Zellen der CollectionView
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath)
         -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
@@ -28,7 +28,7 @@ class MenuViewController: UICollectionViewController {
             cell.backgroundColor = itemBackgroundColor[indexPath.item]
             return cell
     }
-
+    ///Die Methode für das Anwählen einer Collection View Zelle.
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.item {
         case 0  :
@@ -57,7 +57,7 @@ class MenuViewController: UICollectionViewController {
             print( "default")
         }
     }
-
+    ///Methode für die Kopfzeile.
     override func collectionView(_ collectionView: UICollectionView,
                                  viewForSupplementaryElementOfKind kind: String,
                                  at indexPath: IndexPath) -> UICollectionReusableView {
@@ -68,27 +68,22 @@ class MenuViewController: UICollectionViewController {
         sectionHeaderView.label.text = "Wählen Sie einen Vorgang aus"
         return sectionHeaderView
     }
-
-    override func viewDidLoad() { // Methode für das Laden der View
+    ///Methode für das Laden der View
+    override func viewDidLoad() {
         super.viewDidLoad()
         var screenSize: CGRect!
         var screenWidth: CGFloat!
         var itemsSize: CGFloat!
-
-        screenSize = UIScreen.main.bounds //Size of Screen
-        screenWidth = screenSize.width //Width of Screen
+        screenSize = UIScreen.main.bounds
+        screenWidth = screenSize.width
         itemsSize = (screenWidth - 3 * 16) / 2
-
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout() //Parameter of Layout
+        ///Parameter of Layout
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
         layout.itemSize = CGSize(width: itemsSize, height: itemsSize) //Item size
         layout.minimumInteritemSpacing = 16
         layout.minimumLineSpacing = 16
         collectionView!.collectionViewLayout = layout
         layout.headerReferenceSize = CGSize(width: 50, height: 50)
-    }
-
-    override func didReceiveMemoryWarning() { //Function for Receiving Memory Warning
-        super.didReceiveMemoryWarning()
     }
 }

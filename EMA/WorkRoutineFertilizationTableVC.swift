@@ -7,20 +7,22 @@
 //
 
 import UIKit
-
+/**
+ Klasse für die Düngung.
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 class WorkRoutineFertilizationTableVC: UITableViewController {
-
+    ///Variable für die ITEMS in der DB.
     var items = [DatabaseModelFertilization]()
-
+    ///Variable für Datenbankmanager
     let databaseManager = DatabaseManager.shared
-
+    ///Funktion für das Laden der View.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         items.removeAll()
         getAllObjects()
         tableView.reloadData()
     }
-
+    ///Funktion für das Laden der Objekte aus der Datenbank.
     func getAllObjects() {
         let objects = databaseManager.getObjects(type: DatabaseModelFertilization.self)
         for element in objects {
@@ -29,7 +31,7 @@ class WorkRoutineFertilizationTableVC: UITableViewController {
             }
         }
     }
-
+    ///Funktion für das Laden der View.
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,7 +43,7 @@ class WorkRoutineFertilizationTableVC: UITableViewController {
         )
         self.navigationItem.rightBarButtonItem = addWorkingRoutineButton
     }
-
+    ///Funktion für den Button.
     @objc func addButton(sender: UIBarButtonItem) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let workRoutineFertilizationViewController = mainStoryboard.instantiateViewController(
@@ -51,16 +53,15 @@ class WorkRoutineFertilizationTableVC: UITableViewController {
         workRoutineFertilizationViewController?.navigationItem.backBarButtonItem?.title = "Zurück"
         self.navigationController?.pushViewController(workRoutineFertilizationViewController!, animated: true)
     }
-
+    ///Anzahl der Sektionen
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    ///Anzahl der Zeilen der TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return items.count
     }
-
+    ///Darstellung der Zellen.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WorkRoutineFertilizationCell", for: indexPath)
             as! WorkRoutineFertilizationCell // swiftlint:disable:this force_cast
@@ -76,11 +77,11 @@ class WorkRoutineFertilizationTableVC: UITableViewController {
 
         return cell
     }
-
+    ///Zelle kann editiert werden.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-
+    ///Funktion für das Löschen der Zelle.
     override func tableView(_ tableView: UITableView,
                             commit editingStyle: UITableViewCellEditingStyle,
                             forRowAt indexPath: IndexPath) {
@@ -90,7 +91,7 @@ class WorkRoutineFertilizationTableVC: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-
+    ///Funktion für das Selektieren der Zelle
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let workRoutineFertilizationViewController = mainStoryboard.instantiateViewController(

@@ -57,90 +57,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 12,
-      "symbol": "DatabaseManager",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 14,
-      "symbol": "DatabaseManager.database",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 16,
-      "symbol": "DatabaseManager.shared",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 18,
-      "symbol": "DatabaseManager.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 22,
-      "symbol": "DatabaseManager.getObjects(type:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 26,
-      "symbol": "DatabaseManager.getObjects(type:with:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 30,
-      "symbol": "DatabaseManager.addToDatabase(object:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseManager.swift",
-      "line": 41,
-      "symbol": "DatabaseManager.deleteFromDatabase(object:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/DatabaseModels/Field.swift",
-      "line": 25,
-      "symbol": "Location",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/Enums/WorkState.swift",
-      "line": 11,
-      "symbol": "WorkState",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/Enums/WorkState.swift",
-      "line": 12,
-      "symbol": "WorkState.add",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/Enums/WorkState.swift",
-      "line": 13,
-      "symbol": "WorkState.edit",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/Fields/FieldsViewController.swift",
       "line": 24,
       "symbol": "FieldsViewController",
@@ -358,65 +274,44 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/LoginManager.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzTableVC.swift",
       "line": 11,
-      "symbol": "LoginManager",
+      "symbol": "PflanzenschutzTableVC",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/LoginManager.swift",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzTableVC.swift",
       "line": 12,
-      "symbol": "LoginManager.tryLogin(username:password:)",
+      "symbol": "PflanzenschutzTableVC.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuCollectionViewCell.swift",
-      "line": 11,
-      "symbol": "MenuCollectionViewCell",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuCollectionViewCell.swift",
-      "line": 12,
-      "symbol": "MenuCollectionViewCell.label",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 23,
-      "symbol": "MenuViewController.collectionView(_:cellForItemAt:)",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzTableVC.swift",
+      "line": 20,
+      "symbol": "PflanzenschutzTableVC.didReceiveMemoryWarning()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 32,
-      "symbol": "MenuViewController.collectionView(_:didSelectItemAt:)",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzTableVC.swift",
+      "line": 25,
+      "symbol": "PflanzenschutzTableVC.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 61,
-      "symbol": "MenuViewController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzTableVC.swift",
+      "line": 29,
+      "symbol": "PflanzenschutzTableVC.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 72,
-      "symbol": "MenuViewController.viewDidLoad()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/MenuViewController.swift",
-      "line": 91,
-      "symbol": "MenuViewController.didReceiveMemoryWarning()",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzTableVC.swift",
+      "line": 34,
+      "symbol": "PflanzenschutzTableVC.add()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -430,29 +325,155 @@
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
       "line": 13,
+      "symbol": "PflanzenschutzViewController.scrollView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 14,
+      "symbol": "PflanzenschutzViewController.mainView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 15,
+      "symbol": "PflanzenschutzViewController.dateLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 22,
+      "symbol": "PflanzenschutzViewController.datePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 27,
+      "symbol": "PflanzenschutzViewController.fieldLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 34,
+      "symbol": "PflanzenschutzViewController.fieldPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 39,
+      "symbol": "PflanzenschutzViewController.userLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 46,
+      "symbol": "PflanzenschutzViewController.userTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 52,
+      "symbol": "PflanzenschutzViewController.workingHourLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 59,
+      "symbol": "PflanzenschutzViewController.workingHourPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 64,
+      "symbol": "PflanzenschutzViewController.categoryLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 71,
+      "symbol": "PflanzenschutzViewController.categoryPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 76,
+      "symbol": "PflanzenschutzViewController.againstLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 83,
+      "symbol": "PflanzenschutzViewController.againstTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 89,
+      "symbol": "PflanzenschutzViewController.protectionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 96,
+      "symbol": "PflanzenschutzViewController.protectionTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 102,
+      "symbol": "PflanzenschutzViewController.dueLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 109,
+      "symbol": "PflanzenschutzViewController.dueTextField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 115,
       "symbol": "PflanzenschutzViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
-      "line": 19,
-      "symbol": "PflanzenschutzViewController.didReceiveMemoryWarning()",
+      "line": 149,
+      "symbol": "PflanzenschutzViewController.setup2()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/SectionHeaderView.swift",
-      "line": 11,
-      "symbol": "SectionHeaderView",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 188,
+      "symbol": "PflanzenschutzViewController.setup()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/SectionHeaderView.swift",
-      "line": 12,
-      "symbol": "SectionHeaderView.label",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/mustafasahinli/Desktop/EMA/EMA/EMA/PflanzenschutzViewController.swift",
+      "line": 192,
+      "symbol": "PflanzenschutzViewController.pickerView(_:titleForRow:forComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

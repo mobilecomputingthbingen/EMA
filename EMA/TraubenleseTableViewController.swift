@@ -8,18 +8,22 @@
 
 import UIKit
 import RealmSwift
-
+/**
+ Klasse für das Traubenlese.
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 class TraubenleseTableViewController: UITableViewController {
+    ///Variable für die ITEMS in der DB.
     var items = [DataBaseTraubenlese]()
+    ///Variable für Datenbankmanager
     let databaseManager = DatabaseManager.shared
+    ///Funktion für das Laden der View.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         items.removeAll()
         getAllObjects()
         tableView.reloadData()
-        //items = databaseManager.getObjects(type: DatabaseModelNormal)
-        // !!
     }
+     ///Funktion für das Laden der Objekte aus der Datenbank.
     func getAllObjects() {
         let objects = databaseManager.getObjects(type: DataBaseTraubenlese.self)
         for element in objects {
@@ -28,6 +32,7 @@ class TraubenleseTableViewController: UITableViewController {
             }
         }
     }
+    ///Funktion für das Laden der View.
     override func viewDidLoad() {
         super.viewDidLoad()
         let addWorkingRoutineButton = UIBarButtonItem(
@@ -38,6 +43,7 @@ class TraubenleseTableViewController: UITableViewController {
         )
         self.navigationItem.rightBarButtonItem = addWorkingRoutineButton
     }
+    ///Funktion für den Button.
     @objc func addButton(sender: UIBarButtonItem) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let traubenleseViewController = mainStoryboard.instantiateViewController(
@@ -47,19 +53,15 @@ class TraubenleseTableViewController: UITableViewController {
         traubenleseViewController?.navigationItem.backBarButtonItem?.title = "Zurück"
         self.navigationController?.pushViewController(traubenleseViewController!, animated: true)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        //TEST
-    }
-    // MARK: - Table view data source
+    ///Anzahl der Sektionen
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    ///Anzahl der Zeilen der TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return items.count
     }
+     ///Darstellung der Zellen.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TraubenleseCell", for: indexPath)
             as! TraubenleseCell // swiftlint:disable:this force_cast
@@ -72,10 +74,11 @@ class TraubenleseTableViewController: UITableViewController {
         cell.usernameLabel.text = items[indexPath.item].username
         return cell
     }
-    // Override to support conditional editing of the table view.
+   ///Zelle kann editiert werden.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    ///Funktion für das Löschen der Zelle.
     override func tableView(_ tableView: UITableView,
                             commit editingStyle: UITableViewCellEditingStyle,
                             forRowAt indexPath: IndexPath) {
@@ -85,6 +88,7 @@ class TraubenleseTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
+    ///Funktion für das Selektieren der Zelle
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let traubenleseViewController = mainStoryboard.instantiateViewController(

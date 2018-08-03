@@ -7,7 +7,10 @@
 //
 
 import UIKit
-
+/**
+ Klasse für die Kopfzeile vom Menü
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 class SectionHeaderView: UICollectionReusableView {
+    ///Textfeld der Kopfzeile
     @IBOutlet weak var label: UILabel!
 }

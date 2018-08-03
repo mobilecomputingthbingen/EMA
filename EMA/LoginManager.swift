@@ -13,9 +13,13 @@ import Foundation
 class LoginManager {
     ///Funktion für den Login.
     func tryLogin(username: String, password: String) -> Bool {
+        ///Benutzername
         let loginUsername = username
+        ///Passwort
         let loginPassword = password
+        ///Datenbank Benutzername
         let databaseUsername = "benutzername"
+        ///Datenbank Passwort
         let databasePassword = "passwort"
         if loginUsername == databaseUsername && loginPassword == databasePassword {
             return true
