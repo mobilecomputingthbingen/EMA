@@ -7,8 +7,11 @@
 //
 
 import Foundation
-//# Test Bla bla bla blasdjaklödjasädkaslödjasdä
+/**
+ Klasse für das Handeln des Logins.
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 class LoginManager {
+    ///Funktion für den Login.
     func tryLogin(username: String, password: String) -> Bool {
         let loginUsername = username
         let loginPassword = password

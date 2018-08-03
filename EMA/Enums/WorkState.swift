@@ -7,8 +7,12 @@
 //
 
 import Foundation
-
+/**
+ Klasse für die Enums für den Status des Bearbeitens.
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 enum WorkState {
+    ///Hinzufügen
     case add
+    ///Bearbeiten
     case edit
 }

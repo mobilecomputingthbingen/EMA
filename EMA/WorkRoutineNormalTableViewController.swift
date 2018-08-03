@@ -19,7 +19,6 @@ class WorkRoutineNormalTableViewController: UITableViewController {
         items.removeAll()
         getAllObjects()
         tableView.reloadData()
-        // items = databaseManager.getObjects(type: DatabaseModelNormal)
     }
 
     func getAllObjects() {

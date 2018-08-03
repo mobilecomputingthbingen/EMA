@@ -18,7 +18,7 @@
 		33FDF59F2101EC5F002A475E /* EMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF59E2101EC5F002A475E /* EMATests.swift */; };
 		33FDF5AA2101EC5F002A475E /* EMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5A92101EC5F002A475E /* EMAUITests.swift */; };
 		33FE10662113809600EF2C0A /* WorkRoutineNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */; };
-		33FE1068211480DC00EF2C0A /* DataBaseTraubenlese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */; };
+		33FE10712114DDB300EF2C0A /* DataBaseTraubenlese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE106F2114DD9900EF2C0A /* DataBaseTraubenlese.swift */; };
 		69189DED57C1854E9B7DC768 /* Pods_EMATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32D695FDAFE233D628C97CD /* Pods_EMATests.framework */; };
 		7E089834210B5F220085EA50 /* DatabaseModelNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */; };
 		7E089836210B94380085EA50 /* WorkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089835210B94380085EA50 /* WorkState.swift */; };
@@ -27,6 +27,10 @@
 		7E8C36A721089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36A621089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift */; };
 		7E8C36A92108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36A82108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift */; };
 		7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F898B210619C600BA2FEE /* DatabaseManager.swift */; };
+		7E945BA621146EBD00C4A918 /* WorkRoutineFertilizationTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E945BA521146EBD00C4A918 /* WorkRoutineFertilizationTableVC.swift */; };
+		7E945BA821146F0200C4A918 /* WorkRoutineFertilizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E945BA721146F0200C4A918 /* WorkRoutineFertilizationViewController.swift */; };
+		7E945BAA21146F4500C4A918 /* WorkRoutineFertilizationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E945BA921146F4500C4A918 /* WorkRoutineFertilizationCell.swift */; };
+		7E945BAC211474D100C4A918 /* DatabseModelFertilization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E945BAB211474D100C4A918 /* DatabseModelFertilization.swift */; };
 		7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */; };
 		7E9AD2BE2104CC4F00D5CC39 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */; };
 		7E9D32C721064384001A49F1 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9D32C621064384001A49F1 /* MenuCollectionViewCell.swift */; };
@@ -75,6 +79,7 @@
 		33FDF5A92101EC5F002A475E /* EMAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMAUITests.swift; sourceTree = "<group>"; };
 		33FDF5AB2101EC5F002A475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseTraubenlese.swift; sourceTree = "<group>"; };
+		33FE106F2114DD9900EF2C0A /* DataBaseTraubenlese.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseTraubenlese.swift; sourceTree = "<group>"; };
 		52F57BE480750000E0555C0D /* Pods-EMAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMAUITests/Pods-EMAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5D9808B1E81DBB477392B081 /* Pods_EMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC8F36519DB49EBB89D362E /* Pods-EMATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMATests/Pods-EMATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +92,10 @@
 		7E8C36A82108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingRoutineNormalCell.swift; sourceTree = "<group>"; };
 		7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRoutineNormalViewController.swift; sourceTree = "<group>"; };
 		7E8F898B210619C600BA2FEE /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		7E945BA521146EBD00C4A918 /* WorkRoutineFertilizationTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRoutineFertilizationTableVC.swift; sourceTree = "<group>"; };
+		7E945BA721146F0200C4A918 /* WorkRoutineFertilizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRoutineFertilizationViewController.swift; sourceTree = "<group>"; };
+		7E945BA921146F4500C4A918 /* WorkRoutineFertilizationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkRoutineFertilizationCell.swift; sourceTree = "<group>"; };
+		7E945BAB211474D100C4A918 /* DatabseModelFertilization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabseModelFertilization.swift; sourceTree = "<group>"; };
 		7E9AD2BB2104C5FA00D5CC39 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		7E9AD2BD2104CC4F00D5CC39 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		7E9D32C621064384001A49F1 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +157,7 @@
 				33FDF5872101EC5E002A475E /* Products */,
 				62CB41CA107F128E98A52E6F /* Pods */,
 				103107A38CFE44B7CE7DD816 /* Frameworks */,
+				7E945BB02114CEED00C4A918 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,9 +235,10 @@
 		7E089832210B5EDF0085EA50 /* DatabaseModels */ = {
 			isa = PBXGroup;
 			children = (
+				33FE106F2114DD9900EF2C0A /* DataBaseTraubenlese.swift */,
+				7E945BAB211474D100C4A918 /* DatabseModelFertilization.swift */,
 				7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */,
 				7E089838210BB6860085EA50 /* Field.swift */,
-				33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */,
 			);
 			path = DatabaseModels;
 			sourceTree = "<group>";
@@ -238,6 +249,14 @@
 				7E089835210B94380085EA50 /* WorkState.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		7E945BB02114CEED00C4A918 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		BD09F42A2104D88D00BDA189 /* Fields */ = {
@@ -477,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FE10712114DDB300EF2C0A /* DataBaseTraubenlese.swift in Sources */,
 				33FE10662113809600EF2C0A /* WorkRoutineNormalViewController.swift in Sources */,
 				33A89AA421106DAD00FD0859 /* TraubenleseTableViewController.swift in Sources */,
 				7E089839210BB6860085EA50 /* Field.swift in Sources */,
@@ -484,11 +504,15 @@
 				7E67090D2105F94600072FE9 /* MenuViewController.swift in Sources */,
 				7E089836210B94380085EA50 /* WorkState.swift in Sources */,
 				33FDF58A2101EC5E002A475E /* AppDelegate.swift in Sources */,
+				7E945BA821146F0200C4A918 /* WorkRoutineFertilizationViewController.swift in Sources */,
 				33A89AA621106DC500FD0859 /* TraubenleseCell.swift in Sources */,
 				33A89AA821106DE800FD0859 /* TraubenleseViewController.swift in Sources */,
+				7E945BA621146EBD00C4A918 /* WorkRoutineFertilizationTableVC.swift in Sources */,
+				7E945BAC211474D100C4A918 /* DatabseModelFertilization.swift in Sources */,
 				7E9D32C721064384001A49F1 /* MenuCollectionViewCell.swift in Sources */,
 				7E9D32C921065B78001A49F1 /* SectionHeaderView.swift in Sources */,
 				7E089834210B5F220085EA50 /* DatabaseModelNormal.swift in Sources */,
+				7E945BAA21146F4500C4A918 /* WorkRoutineFertilizationCell.swift in Sources */,
 				7E8C36A92108AD3D006A6EB9 /* WorkingRoutineNormalCell.swift in Sources */,
 				BD09F42E2104DA1E00BDA189 /* FieldsViewController.swift in Sources */,
 				7E9AD2BC2104C5FA00D5CC39 /* LoginManager.swift in Sources */,
