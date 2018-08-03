@@ -16,7 +16,7 @@ class TraubenleseViewController: UIViewController, UIPickerViewDataSource, UIPic
     @IBOutlet weak var executionpicker: UIPickerView!
     var workState: WorkState!
     let databaseManager = DatabaseManager.shared
-    var databaseModelNormal = DataBaseModelTraubenlese()
+    var databaseModelNormal = DataBaseTraubenlese()
     let defaults = UserDefaults.standard
     let workingHourItems = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
     let executionItems = ["Händisch", "Mechanisch"]

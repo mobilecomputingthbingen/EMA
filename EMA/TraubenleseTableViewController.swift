@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class TraubenleseTableViewController: UITableViewController {
-    var items = [DataBaseModelTraubenlese]()
+    var items = [DataBaseTraubenlese]()
     let databaseManager = DatabaseManager.shared
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -20,9 +20,9 @@ class TraubenleseTableViewController: UITableViewController {
         //items = databaseManager.getObjects(type: DatabaseModelNormal)
     }
     func getAllObjects() {
-        let objects = databaseManager.getObjects(type: DataBaseModelTraubenlese.self)
+        let objects = databaseManager.getObjects(type: DataBaseTraubenlese.self)
         for element in objects {
-            if let normal = element as? DataBaseModelTraubenlese {
+            if let normal = element as? DataBaseTraubenlese {
                 items.append(normal)
             }
         }
