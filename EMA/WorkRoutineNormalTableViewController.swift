@@ -1,7 +1,6 @@
 //
 //  WorkRoutineNormalTableViewController.swift
 //  EMA
-//
 //  Created by Ertugrul Yilmaz on 25.07.18.
 //  Copyright © 2018 Mustafa Sahinli. All rights reserved.
 //
