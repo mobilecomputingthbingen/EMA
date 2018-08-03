@@ -8,7 +8,7 @@
 
 import UIKit
 /**
- Klasse für die Zelle der Düngung.
+ Klasse für die Zelle des Entlaubens.
  **Note :** Für weitere Informationen auf die Parameter klicken.*/
 
 class WorkingRoutineNormalCell: UITableViewCell {

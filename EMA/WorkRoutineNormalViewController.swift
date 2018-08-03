@@ -8,28 +8,35 @@
 
 import UIKit
 import RealmSwift
-
+/**
+ Klasse für die Entlaubung.
+ **Note :** Für weitere Informationen auf die Parameter klicken.*/
 class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    ///Variable für UIPicker Datum
     @IBOutlet weak var datePicker: UIDatePicker!
+    ///Variable für UIPicker Feld
     @IBOutlet weak var fieldPicker: UIPickerView!
+    ///Variable für UIPicker Arbeitsstunden
     @IBOutlet weak var workingHourPicker: UIPickerView!
+    ///Variable Benutzername
     @IBOutlet weak var userNameLabel: UILabel!
-
+    ///Variable Status
     var workState: WorkState!
-
+    ///Variable Database Manager
     let databaseManager = DatabaseManager.shared
-
+    ///Variable Datenbankitem
     var databaseModelNormal = DatabaseModelNormalWorkingRoutine()
-
+    ///User Defaults
     let defaults = UserDefaults.standard
-
+    ///Items der Arbeisstunden
     let workingHourItems = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    ///Definierung des Feldes
     var fieldItems = [Field]()
-
+    ///Definierung Arbeitsstunden
     var workingHour = 1
+    ///Definierung Feld
     var field = ""
-
+    ///Funktion für das Holen von Objekten aus der DB.
     func getAllObjects() {
         let objects = databaseManager.getObjects(type: Field.self)
         for element in objects {
@@ -38,7 +45,7 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
             }
         }
     }
-
+    ///Funktion für das Laden der View.
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -83,7 +90,7 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
             workingHour = Int(workingHourItems[0])!
         }
     }
-
+    ///Funktion für den Button.
     @objc func addButton(sender: UIBarButtonItem) {
         let date = datePicker.date
 
@@ -114,7 +121,7 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
         }
     }
 
-    // sets the local variables
+    ///Funktion für den PickerView.
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == fieldPicker {
             if fieldItems.count > 0 {
@@ -124,15 +131,11 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
             workingHour = Int(workingHourItems[row])!
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    /// Anzahl der Komponenten
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-
+    ///Anzahl der Zeilen
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView == fieldPicker {
             return fieldItems.count
@@ -142,7 +145,7 @@ class WorkRoutineNormalViewController: UIViewController, UIPickerViewDataSource,
             return 0
         }
     }
-
+    ///Titel der Zeilen
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == fieldPicker {
             return fieldItems[row].name
