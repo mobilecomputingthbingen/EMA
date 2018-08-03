@@ -18,6 +18,7 @@ class TraubenleseTableViewController: UITableViewController {
         getAllObjects()
         tableView.reloadData()
         //items = databaseManager.getObjects(type: DatabaseModelNormal)
+        // !!
     }
     func getAllObjects() {
         let objects = databaseManager.getObjects(type: DataBaseTraubenlese.self)
