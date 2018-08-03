@@ -37,12 +37,12 @@ class MenuViewController: UICollectionViewController {
                 withIdentifier: "WorkRoutineNormalTable") as? WorkRoutineNormalTableViewController
             self.navigationController?.pushViewController(workRoutineNormalTableViewController!, animated: true)
         case 1  :
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let traubenleseTableViewController = mainStoryboard.instantiateViewController(
-                withIdentifier: "TraubenleseTable") as? TraubenleseTableViewController
-            self.navigationController?.pushViewController(traubenleseTableViewController!, animated: true)
+            print("Traubenlese")
         case 2  :
-            print( "Düngung")
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let workRoutineFertTableViewController = mainStoryboard.instantiateViewController(
+                withIdentifier: "WorkRoutineFertilizationTable") as? WorkRoutineFertilizationTableVC
+            self.navigationController?.pushViewController(workRoutineFertTableViewController!, animated: true)
         case 3  :
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
            // let pflanzenschutzNormalTableViewController = mainStoryboard.instantiateViewController(

@@ -1,16 +1,16 @@
 //
-//  WorkRoutineNormalTableViewController.swift
+//  WorkRoutineFertilizationTableViewController.swift
 //  EMA
-//  Created by Ertugrul Yilmaz on 25.07.18.
+//
+//  Created by Ertugrul Yilmaz on 03.08.18.
 //  Copyright © 2018 Mustafa Sahinli. All rights reserved.
 //
 
 import UIKit
-import RealmSwift
 
-class WorkRoutineNormalTableViewController: UITableViewController {
+class WorkRoutineFertilizationTableVC: UITableViewController {
 
-    var items = [DatabaseModelNormalWorkingRoutine]()
+    var items = [DatabaseModelFertilization]()
 
     let databaseManager = DatabaseManager.shared
 
@@ -22,12 +22,12 @@ class WorkRoutineNormalTableViewController: UITableViewController {
     }
 
     func getAllObjects() {
-        let objects = databaseManager.getObjects(type: DatabaseModelNormalWorkingRoutine.self)
-            for element in objects {
-                if let normal = element as? DatabaseModelNormalWorkingRoutine {
-                    items.append(normal)
-                }
+        let objects = databaseManager.getObjects(type: DatabaseModelFertilization.self)
+        for element in objects {
+            if let item = element as? DatabaseModelFertilization {
+                items.append(item)
             }
+        }
     }
 
     override func viewDidLoad() {
@@ -44,20 +44,13 @@ class WorkRoutineNormalTableViewController: UITableViewController {
 
     @objc func addButton(sender: UIBarButtonItem) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let workRoutineNormalViewController = mainStoryboard.instantiateViewController(
-            withIdentifier: "WorkRoutineNormal") as? WorkRoutineNormalViewController
-        workRoutineNormalViewController?.title = "Hinzufügen"
-        workRoutineNormalViewController?.workState = WorkState.add
-        workRoutineNormalViewController?.navigationItem.backBarButtonItem?.title = "Zurück"
-        self.navigationController?.pushViewController(workRoutineNormalViewController!, animated: true)
+        let workRoutineFertilizationViewController = mainStoryboard.instantiateViewController(
+            withIdentifier: "WorkRoutineFertilization") as? WorkRoutineFertilizationViewController
+        workRoutineFertilizationViewController?.title = "Hinzufügen"
+        workRoutineFertilizationViewController?.workState = WorkState.add
+        workRoutineFertilizationViewController?.navigationItem.backBarButtonItem?.title = "Zurück"
+        self.navigationController?.pushViewController(workRoutineFertilizationViewController!, animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -69,8 +62,8 @@ class WorkRoutineNormalTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WorkRoutineNormalCell", for: indexPath)
-            as! WorkingRoutineNormalCell // swiftlint:disable:this force_cast
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WorkRoutineFertilizationCell", for: indexPath)
+            as! WorkRoutineFertilizationCell // swiftlint:disable:this force_cast
 
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
@@ -78,13 +71,12 @@ class WorkRoutineNormalTableViewController: UITableViewController {
         dateFormatter.locale = Locale(identifier: "de_DE")
         cell.dateLabel.text = dateFormatter.string(from: items[indexPath.item].date)
         cell.fieldLabel.text = items[indexPath.item].field
-        cell.usernameLabel.text = items[indexPath.item].username
+        cell.categoryLabel.text = items[indexPath.item].category
+        cell.fertilizerLabel.text = items[indexPath.item].fertilize
 
         return cell
     }
 
-    // Override to support conditio nal editing of the table view.
-    //test
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -101,12 +93,12 @@ class WorkRoutineNormalTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let workRoutineNormalViewController = mainStoryboard.instantiateViewController(
-            withIdentifier: "WorkRoutineNormal") as? WorkRoutineNormalViewController
-        workRoutineNormalViewController?.title = "Bearbeiten"
-        workRoutineNormalViewController?.workState = WorkState.edit
-        workRoutineNormalViewController?.databaseModelNormal = items[indexPath.item]
-        self.navigationController?.pushViewController(workRoutineNormalViewController!, animated: true)
+        let workRoutineFertilizationViewController = mainStoryboard.instantiateViewController(
+            withIdentifier: "WorkRoutineFertilization") as? WorkRoutineFertilizationViewController
+        workRoutineFertilizationViewController?.title = "Bearbeiten"
+        workRoutineFertilizationViewController?.workState = WorkState.edit
+        workRoutineFertilizationViewController?.databaseModelFertilization = items[indexPath.item]
+        self.navigationController?.pushViewController(workRoutineFertilizationViewController!, animated: true)
     }
 
 }
