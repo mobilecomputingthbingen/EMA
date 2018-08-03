@@ -18,6 +18,7 @@
 		33FDF59F2101EC5F002A475E /* EMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF59E2101EC5F002A475E /* EMATests.swift */; };
 		33FDF5AA2101EC5F002A475E /* EMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FDF5A92101EC5F002A475E /* EMAUITests.swift */; };
 		33FE10662113809600EF2C0A /* WorkRoutineNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8C36AA2108C15B006A6EB9 /* WorkRoutineNormalViewController.swift */; };
+		33FE1068211480DC00EF2C0A /* DataBaseTraubenlese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */; };
 		69189DED57C1854E9B7DC768 /* Pods_EMATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32D695FDAFE233D628C97CD /* Pods_EMATests.framework */; };
 		7E089834210B5F220085EA50 /* DatabaseModelNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */; };
 		7E089836210B94380085EA50 /* WorkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E089835210B94380085EA50 /* WorkState.swift */; };
@@ -71,6 +72,7 @@
 		33FDF5A52101EC5F002A475E /* EMAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FDF5A92101EC5F002A475E /* EMAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMAUITests.swift; sourceTree = "<group>"; };
 		33FDF5AB2101EC5F002A475E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseTraubenlese.swift; sourceTree = "<group>"; };
 		52F57BE480750000E0555C0D /* Pods-EMAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMAUITests/Pods-EMAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5D9808B1E81DBB477392B081 /* Pods_EMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC8F36519DB49EBB89D362E /* Pods-EMATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMATests/Pods-EMATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			children = (
 				7E089833210B5F220085EA50 /* DatabaseModelNormal.swift */,
 				7E089838210BB6860085EA50 /* Field.swift */,
+				33FE1067211480DC00EF2C0A /* DataBaseTraubenlese.swift */,
 			);
 			path = DatabaseModels;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				BD09F42C2104DA1300BDA189 /* MapViewController.swift in Sources */,
 				7E8C36A721089FD7006A6EB9 /* WorkRoutineNormalTableViewController.swift in Sources */,
 				7E8F898C210619C600BA2FEE /* DatabaseManager.swift in Sources */,
+				33FE1068211480DC00EF2C0A /* DataBaseTraubenlese.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
